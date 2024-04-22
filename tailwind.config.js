@@ -9,6 +9,7 @@ export default {
     extend: {
       colors:{
         "dark-black": '#09090B',
+        "hover-black": '#27272A'
       }
     },
     container: {

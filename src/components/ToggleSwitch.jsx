@@ -8,24 +8,24 @@ function ToggleSwitch({ mode, setMode }) {
         setIsOpen(!isOpen);
     };
 
-
     return (
         <div className='container flex my-5'>
             <div className="relative">
-                <button onClick={toggleDropdown} className="inline-flex items-center justify-center w-full px-4 py-2 text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-800 rounded-md duration-300 " > click
+                <button onClick={toggleDropdown} className="inline-flex items-center justify-center w-full px-4 py-2 text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-dark-black dark:hover:bg-hover-black rounded-md duration-300 " >
+                    {mode === true ? "D" : "L"}
                 </button>
-                    <div className= {`absolute right-0 z-10 mt-2  w-[100px] bg-white dark:bg-gray-800 shadow-lg rounded-md transition-all origin-top-right duration-200 ${isOpen ? "scale-100": "scale-0"} `}>
-                        <ul className="py-1 text-center">
-                
-                            {["dark","light"].map((ele,ind)=>{
-                                return (
-                                    <li key={ind}>
-                                        <button onClick={() => { setMode(ele=="dark"? true : false) }} className=" outline-none w-full hover:bg-slate-100 dark:hover:bg-slate-800 dark:bg-slate-900 py-1 duration-500 dark:text-white">{ele}</button>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
+                <div className={`absolute right-0 z-10 mt-2  w-[100px] bg-white shadow-xl dark:bg-dark-black  rounded-md transition-all origin-top-right duration-300 ${isOpen ? "scale-100" : "scale-0"} `}>
+                    <ul className="py-1 text-center p-1">
+
+                        {["dark", "light"].map((ele, ind) => {
+                            return (
+                                <li key={ind} className='hover:bg-slate-100 dark:hover:bg-hover-black rounded-sm  my-1 duration-300 dark:text-white'>
+                                    <button onClick={() => { setMode(ele == "dark" ? true : false) }} className="w-full outline-none py-1">{ele}</button>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </div>
 
         </div>
