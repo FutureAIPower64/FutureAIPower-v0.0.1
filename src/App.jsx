@@ -8,6 +8,7 @@ function App() {
     <div data-mode={mode ? "dark" : "light"}>
       <ToggleSwitch mode={mode} setMode={setMode}/>
       <DummyData />
+      {/* dxgdfgdfgdfg */}
     </div>
   )
 }
