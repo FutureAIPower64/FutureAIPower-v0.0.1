@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DummyData from './components/DummyData';
 import ToggleSwitch from './components/ToggleSwitch';
+import Box from './components/Box';
 
 function App() {
   let [mode,setMode] = useState(false);
@@ -8,7 +9,7 @@ function App() {
     <div data-mode={mode ? "dark" : "light"}>
       <ToggleSwitch mode={mode} setMode={setMode}/>
       <DummyData />
-      {/* dxgdfgdfgdfg */}
+      <Box></Box>
     </div>
   )
 }
