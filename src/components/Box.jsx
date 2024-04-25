@@ -32,7 +32,7 @@ function Box() {
             <ul className='px-2 pt-2'>
               {
                 listing.map((item,index)=>{
-                  return <li className='flex items-center py-2  hover:bg-hover-grey hover:dark:text-white  rounded-sm '><i>{icons[index]}</i><span className='ps-1'>{item}</span></li>
+                  return <li className='flex items-center py-2  hover:bg-hover-grey hover:dark:text-black  rounded-sm '><i>{icons[index]}</i><span className='ps-1'>{item}</span></li>
                 })
               }               
             </ul>
