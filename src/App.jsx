@@ -12,10 +12,11 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Favourites from './components/Favourites';
 import About from './components/About';
+import { useSelector } from "react-redux";
 function App() {
+  const mode = useSelector(state=> state.counter.mode);
   return (
-    <div>
-     
+    <div data-mode={mode ? "dark" : "light"}>
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/AI-Tools" element={ <AI_Tools/> } />
