@@ -1,21 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  mode: 0,
+  carddata: 0,
 }
 
 export const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    changeMode: (state,action) => {
-      state.mode = action.payload;
+    increment: (state) => {
+     
     },
     
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { changeMode  } = counterSlice.actions
+export const { increment  } = counterSlice.actions
 
 export default counterSlice.reducer
