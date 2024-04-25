@@ -9,7 +9,11 @@ export default {
     extend: {
       colors:{
         "dark-black": '#09090B',
-        "hover-black": '#27272A'
+        "hover-black": '#27272A',
+        "hover-grey": '#F4F4F5',
+      },
+      height: {
+        "box":"348px",
       }
     },
     container: {
