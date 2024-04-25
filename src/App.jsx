@@ -1,3 +1,8 @@
+// import React, { useState } from 'react'
+// import DummyData from './components/DummyData';
+// import ToggleSwitch from './components/ToggleSwitch';
+// import Header from './components/Header';
+
 import React from "react";
 import { Routes, Route } from "react-router-dom"
 import Home from './components/Home';

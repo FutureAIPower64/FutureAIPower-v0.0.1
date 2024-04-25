@@ -1,16 +1,15 @@
-import React, { useState } from "react";
-import ToggleSwitch from "./ToggleSwitch";
-import DummyData from "./DummyData";
+import React from "react";
 import Header from "./Header";
 import Box from "./Box";
+import Sliderbar from "./Sliderbar";
+import { useSelector } from "react-redux";
 function Home() {
-  let [mode, setMode] = useState(false);
-
+  const mode = useSelector(state => state.counter.mode);
+  
   return (
     <div data-mode={mode ? "dark" : "light"}>
       <Header />
-      <ToggleSwitch mode={mode} setMode={setMode} />
-      <DummyData />
+      <Sliderbar></Sliderbar>
       <Box></Box>
     </div>
   );
