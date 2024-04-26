@@ -53,15 +53,15 @@ function Cards() {
             cate: 'Logo Generator',
         },
         {
-            icon: icon2,
+            icon: icon28,
             bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#727272", "#727272"],
-            title: 'Tome',
-            description: 'Unlock your heart work with AI-powered generative storytelling from Tome.',
-            tags: ['#storyteller', ' #presentations'],
-            buttonText: 'Free',
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Drafthorse AI',
+            description: 'Boost online presence with AI-driven, SEO-optimized content',
+            tags: ['#marketing', " #SEO"],
+            buttonText: 'Free Trial',
             visit: <HiExternalLink />,
-            cate: 'Logo Generator',
+            cate: 'SEO',
         },
         {
             icon: icon3,
@@ -86,16 +86,17 @@ function Cards() {
             cate: 'Logo Generator',
         },
         {
-            icon: icon5,
+            icon: icon7,
             bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Photo AI',
-            description: 'Unleash AI-powered photo generation and personalized...',
-            tags: ['#image generator', ' #avatars'],
-            buttonText: 'Freemium',
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'HitPaw Photo AI',
+            description: 'Your All-in-One Photo Editing Solution',
+            tags: ['#image editing'],
+            buttonText: 'Paid',
             visit: <HiExternalLink />,
             cate: 'Photo Editor',
         },
+
         {
             icon: icon6,
             bookmark: <FiBookmark />,
@@ -108,15 +109,16 @@ function Cards() {
             cate: 'Photo Editor',
         },
         {
-            icon: icon7,
+            icon: icon22,
             bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'HitPaw Photo AI',
-            description: 'Your All-in-One Photo Editing Solution',
-            tags: ['#image editing'],
-            buttonText: 'Paid',
+            star: ["#FF9635", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Speechify',
+            description: 'Transform text into lifelike speech, enhancing accessibility and...',
+            tags: ['#text to speech'],
+            buttonText: 'Freemium',
             visit: <HiExternalLink />,
-            cate: 'Photo Editor',
+            cate: 'Text to Speech',
+
         },
         {
             icon: icon8,
@@ -130,6 +132,17 @@ function Cards() {
             cate: 'Photo Editor',
         },
         {
+            icon: icon2,
+            bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#727272", "#727272"],
+            title: 'Tome',
+            description: 'Unlock your heart work with AI-powered generative storytelling from Tome.',
+            tags: ['#storyteller', ' #presentations'],
+            buttonText: 'Free',
+            visit: <HiExternalLink />,
+            cate: 'Logo Generator',
+        },
+        {
             icon: icon9,
             bookmark: <FiBookmark />,
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
@@ -140,17 +153,7 @@ function Cards() {
             visit: <HiExternalLink />,
             cate: 'Video Editor',
         },
-        {
-            icon: icon10,
-            bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Videoleap',
-            description: 'Videoleap is a powerful and creative video editing app created by...',
-            tags: ['#video enhancer', ' #video editing'],
-            buttonText: 'Free Trial',
-            visit: <HiExternalLink />,
-            cate: 'Video Editor',
-        },
+
         {
             icon: icon11,
             bookmark: <FiBookmark />,
@@ -172,6 +175,17 @@ function Cards() {
             buttonText: 'Paid',
             visit: <HiExternalLink />,
             cate: 'Video Editor'
+        },
+        {
+            icon: icon16,
+            bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'KeywordSearch',
+            description: 'Optimize ad targeting and keyword strategy with AI-driven insights for...',
+            tags: ['#social media', ' #marketing', '#education'],
+            buttonText: 'Free Trial',
+            visit: <HiExternalLink />,
+            cate: 'Marketing',
         },
         {
             icon: icon13,
@@ -197,38 +211,27 @@ function Cards() {
 
         },
         {
-            icon: icon15,
-            bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#727272"],
-            title: 'Shuffll',
-            description: 'Revolutionize video production with AI: script to screen, fast, affordable,...',
-            tags: ['#marketing', "education"],
-            buttonText: 'Paid',
-            visit: <HiExternalLink />,
-            cate: 'Marketing',
-
-        },
-        {
-            icon: icon16,
-            bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'KeywordSearch',
-            description: 'Optimize ad targeting and keyword strategy with AI-driven insights for...',
-            tags: ['#social media', ' #marketing', '#education'],
-            buttonText: 'Free Trial',
-            visit: <HiExternalLink />,
-            cate: 'Marketing',
-        },
-        {
-            icon: icon17,
+            icon: icon10,
             bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'TeamSmartAI',
-            description: 'Assemble your AI team and become more productive...',
-            tags: ['#productivity'],
-            buttonText: 'Freemium',
+            title: 'Videoleap',
+            description: 'Videoleap is a powerful and creative video editing app created by...',
+            tags: ['#video enhancer', ' #video editing'],
+            buttonText: 'Free Trial',
             visit: <HiExternalLink />,
-            cate: 'Productivity',
+            cate: 'Video Editor',
+        },
+        
+        {
+            icon: icon25,
+            bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Gizzmo',
+            description: 'Gizzmo WP plugin creates Amazon affiliate articles in just two clicks...',
+            tags: ['#SEO', " #copywriter"],
+            buttonText: 'Free Trial',
+            visit: <HiExternalLink />,
+            cate: 'SEO',
         },
         {
             icon: icon18,
@@ -255,6 +258,18 @@ function Cards() {
 
         },
         {
+            icon: icon15,
+            bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#727272"],
+            title: 'Shuffll',
+            description: 'Revolutionize video production with AI: script to screen, fast, affordable,...',
+            tags: ['#marketing', "education"],
+            buttonText: 'Paid',
+            visit: <HiExternalLink />,
+            cate: 'Marketing',
+
+        },
+        {
             icon: icon20,
             bookmark: <FiBookmark />,
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
@@ -277,17 +292,17 @@ function Cards() {
             cate: 'Text to Speech',
         },
         {
-            icon: icon22,
+            icon: icon17,
             bookmark: <FiBookmark />,
-            star: ["#FF9635", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Speechify',
-            description: 'Transform text into lifelike speech, enhancing accessibility and...',
-            tags: ['#text to speech'],
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'TeamSmartAI',
+            description: 'Assemble your AI team and become more productive...',
+            tags: ['#productivity'],
             buttonText: 'Freemium',
             visit: <HiExternalLink />,
-            cate: 'Text to Speech',
-
+            cate: 'Productivity',
         },
+    
         {
             icon: icon23,
             bookmark: <FiBookmark />,
@@ -299,29 +314,6 @@ function Cards() {
             visit: <HiExternalLink />,
             cate: 'Text to Speech',
 
-        },
-        {
-            icon: icon24,
-            bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Murf',
-            description: 'Elevate content with lifelike AI voiceovers in 20+ languages and..',
-            tags: ['#marketing', " #education", " #text to speech"],
-            buttonText: 'Free Trial',
-            visit: <HiExternalLink />,
-            cate: 'Text to Speech',
-        },
-
-        {
-            icon: icon25,
-            bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Gizzmo',
-            description: 'Gizzmo WP plugin creates Amazon affiliate articles in just two clicks...',
-            tags: ['#SEO', " #copywriter"],
-            buttonText: 'Free Trial',
-            visit: <HiExternalLink />,
-            cate: 'SEO',
         },
         {
             icon: icon26,
@@ -345,19 +337,30 @@ function Cards() {
             buttonText: 'Freemium',
             visit: <HiExternalLink />,
             cate: 'SEO',
-
         },
         {
-            icon: icon28,
+            icon: icon24,
             bookmark: <FiBookmark />,
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Drafthorse AI',
-            description: 'Boost online presence with AI-driven, SEO-optimized content',
-            tags: ['#marketing', " #SEO"],
+            title: 'Murf',
+            description: 'Elevate content with lifelike AI voiceovers in 20+ languages and..',
+            tags: ['#marketing', " #education", " #text to speech"],
             buttonText: 'Free Trial',
             visit: <HiExternalLink />,
-            cate: 'SEO',
+            cate: 'Text to Speech',
         },
+        {
+            icon: icon5,
+            bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Photo AI',
+            description: 'Unleash AI-powered photo generation and personalized...',
+            tags: ['#image generator', ' #avatars'],
+            buttonText: 'Freemium',
+            visit: <HiExternalLink />,
+            cate: 'Photo Editor',
+        },
+
 
     ];
     return (
@@ -366,17 +369,17 @@ function Cards() {
                 mohit and vansh
             </div>
             <div className='w-10/12'>
-                <OwlCarousel className='owl-theme' autoplay={true} autoplayTimeout={3000}  margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
+                <OwlCarousel className='owl-theme' margin={12} dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200 h-72 border-1 dark:border-white'>
-                                <div className='flex justify-between items-center'>
+                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200  border-1 dark:border-white'>
+                                <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
                                         <div className='w-12 h-12 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
                                             <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
                                         </div>
                                         <div className='font-semibold'>
-                                            <p>{card.title}</p>
+                                            <p className='text-md'>{card.title}</p>
                                             <i className='flex text-sm'>
                                                 {
                                                     card.star.map((star) => (
@@ -409,7 +412,7 @@ function Cards() {
                 </OwlCarousel>
             </div>
         </div>
-)
+    )
 }
 
 export default Cards;
