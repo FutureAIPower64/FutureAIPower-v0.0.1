@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
-  mode: JSON.parse(localStorage.getItem('mode')) || false,
+  mode: localStorage.getItem('mode') || 'light',
 }
 export const counterSlice = createSlice({
   name: 'counter',
