@@ -27,7 +27,7 @@ import icon16 from '../assets/c_img16.svg'
 
 
 function Cards() {
-// cards 
+// cards git 
     const cards = [
         {
             icon: icon1,
@@ -90,7 +90,7 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'AI Photo Filter',
             description: 'Revolutionize image editing: intuitive AI, precise layering,...',
-            tags: ['#design generator', ' #e-commerce',"#image editor"],
+            tags: ['#design generator', " #image editor"],
             buttonText: 'Freemium',
             visit: <HiExternalLink />,
             cate: 'Photo Editor',
@@ -215,14 +215,14 @@ function Cards() {
             </div>
             <div className='w-10/12'>
                 <div className='flex  justify-between'>
-                    <OwlCarousel className='owl-theme' autoplay={true} autoplayTimeout={3000} margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 3 }, 1000: { items: 4 } }}>
+                    <OwlCarousel className='owl-theme' autoplay={true}  autoplayTimeout={3000} margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
                         {
                             cards.map((card) => (
-                                <div className=' border-2 rounded-lg px-4 py-3  bg-slate-200 w-full h-72'>
+                                <div className=' border-2 rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200'>
                                     <div className='flex justify-between items-center '>
                                         <div className='flex'>
-                                            <div className='w-12 h-12 rounded-md me-3' style={{ border: '1px solid rgba(0,0,0,0.5)' }}>
-                                                <img src={card.icon} className='rounded-md'></img>
+                                            <div className='w-12 h-12 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
+                                                <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black'></img>
                                             </div>
                                             <div className='font-semibold'>
                                                 <p>{card.title}</p>
@@ -239,15 +239,15 @@ function Cards() {
                                             {card.bookmark}
                                         </div>
                                     </div>
-                                    <div className='my-5 text-md text-ellipsis h-18'>
+                                    <div className='my-5 text-md h-20'>
                                         {card.description}
                                     </div>
-                                    <div className='mb-6 text-sm h-6'>
+                                    <div className='mb-6 text-sm h-7'>
                                         {card.tags}
                                     </div>
                                     <div className='flex justify-between my-4' >
                                         <p className='text-md font-semibold'>{card.buttonText}</p>
-                                        <div className='flex items-center px-1 rounded' style={{ border: '1px solid black' }}>
+                                        <div className='flex items-center px-1 rounded dark:border-slate-50 border-1 border-dark-black'>
                                             <p className='text-md'>Visit</p>
                                             <i>{card.visit}</i>
                                         </div>
