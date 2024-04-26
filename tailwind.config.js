@@ -11,10 +11,11 @@ export default {
         "dark-black": '#09090B',
         "hover-black": '#27272A',
         "hover-grey": '#F4F4F5',
+        "hover-blue": 'rgba(23, 37, 84, 0.7)',
       },
       height: {
         "box":"348px",
-      }
+      }  
     },
     container: {
       center: true,
