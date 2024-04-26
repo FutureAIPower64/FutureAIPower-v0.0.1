@@ -39,7 +39,7 @@ import icon28 from '../assets/c_img28.png'
 
 
 function Cards() {
-// cards git 
+    // cards git 
     const cards = [
         {
             icon: icon1,
@@ -157,7 +157,7 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'Video Tap',
             description: 'Video Tap is an AI-powered tool that helps individuals and businesses...',
-            tags: ['#video generator',"#video editing"],
+            tags: ['#video generator', "#video editing"],
             buttonText: 'Paid',
             visit: <HiExternalLink />,
             cate: 'Video Editor',
@@ -202,7 +202,7 @@ function Cards() {
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#727272"],
             title: 'Shuffll',
             description: 'Revolutionize video production with AI: script to screen, fast, affordable,...',
-            tags: ['#marketing',"education"],
+            tags: ['#marketing', "education"],
             buttonText: 'Paid',
             visit: <HiExternalLink />,
             cate: 'Marketing',
@@ -214,7 +214,7 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'KeywordSearch',
             description: 'Optimize ad targeting and keyword strategy with AI-driven insights for...',
-            tags: ['#social media', ' #marketing','#education'],
+            tags: ['#social media', ' #marketing', '#education'],
             buttonText: 'Free Trial',
             visit: <HiExternalLink />,
             cate: 'Marketing',
@@ -266,58 +266,12 @@ function Cards() {
             cate: 'Productivity',
         },
         {
-            icon: icon17,
-            bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Unreal Speech',
-            description: 'Low cost Text-to-Speech API with human-like AI voices...',           
-            tags: ['#text to speech'," #research"],
-            buttonText: 'Freemium',
-            visit: <HiExternalLink />,
-            cate: 'Text to Speech',
-        },
-        {
-            icon: icon18,
-            bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Bard for Google Pro',
-            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
-            tags: ['#productivity'],
-            buttonText: 'Free',
-            visit: <HiExternalLink />,
-            cate: 'Productivity',
-
-        },
-        {
-            icon: icon19,
-            bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Productivity Pets',
-            description: 'Task management and productivity tracking...',
-            tags: ['#Productivity'],
-            buttonText: 'Free',
-            visit: <HiExternalLink />,
-            cate: 'Productivity',
-
-        },
-        {
-            icon: icon20,
-            bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Productivity Vibes',
-            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
-            tags: ['#prompt generator'],
-            buttonText: 'Free',
-            visit: <HiExternalLink />,
-            cate: 'Productivity',
-        },
-        {
             icon: icon21,
             bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
             title: 'Unreal Speech',
-            description: 'Low cost Text-to-Speech API with human-like AI voices...',           
-            tags: ['#text to speech'," #research"],
+            description: 'Low cost Text-to-Speech API with human-like AI voices...',
+            tags: ['#text to speech', " #research"],
             buttonText: 'Freemium',
             visit: <HiExternalLink />,
             cate: 'Text to Speech',
@@ -340,7 +294,7 @@ function Cards() {
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
             title: 'Suno AI Bark',
             description: 'Transform text into diverse, realistic audio with generative AI technology...',
-            tags: ['#Music'," #audio editing"," #text to speech"],
+            tags: ['#Music', " #audio editing", " #text to speech"],
             buttonText: 'Free',
             visit: <HiExternalLink />,
             cate: 'Text to Speech',
@@ -352,19 +306,19 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'Murf',
             description: 'Elevate content with lifelike AI voiceovers in 20+ languages and..',
-            tags: ['#marketing'," #education"," #text to speech"],
+            tags: ['#marketing', " #education", " #text to speech"],
             buttonText: 'Free Trial',
             visit: <HiExternalLink />,
             cate: 'Text to Speech',
         },
-        
+
         {
             icon: icon25,
             bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
             title: 'Gizzmo',
-            description: 'Gizzmo WP plugin creates Amazon affiliate articles in just two clicks...',           
-            tags: ['#SEO'," #copywriter"],
+            description: 'Gizzmo WP plugin creates Amazon affiliate articles in just two clicks...',
+            tags: ['#SEO', " #copywriter"],
             buttonText: 'Free Trial',
             visit: <HiExternalLink />,
             cate: 'SEO',
@@ -375,7 +329,7 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'MarketMuse',
             description: 'Revolutionize content strategy with AI-driven research, planning, and...',
-            tags: ['#marketing'," #SEO"," #research"],
+            tags: ['#marketing', " #SEO", " #research"],
             buttonText: 'Freemium',
             visit: <HiExternalLink />,
             cate: 'SEO',
@@ -387,7 +341,7 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'SEO Content AI',
             description: 'Maximize your online presence with AI-driven, SEO-optimized content...',
-            tags: ['#marketing'," #SEO"," #research"],
+            tags: ['#marketing', " #SEO", " #research"],
             buttonText: 'Freemium',
             visit: <HiExternalLink />,
             cate: 'SEO',
@@ -399,7 +353,7 @@ function Cards() {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'Drafthorse AI',
             description: 'Boost online presence with AI-driven, SEO-optimized content',
-            tags: ['#marketing'," #SEO"],
+            tags: ['#marketing', " #SEO"],
             buttonText: 'Free Trial',
             visit: <HiExternalLink />,
             cate: 'SEO',
@@ -412,52 +366,50 @@ function Cards() {
                 mohit and vansh
             </div>
             <div className='w-10/12'>
-                <div className='flex  justify-between'>
-                    <OwlCarousel className='owl-theme' autoPlay={true} autoplayTimeout={3000} margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
-                        {
-                            cards.map((card) => (
-                                <div className=' border-2 rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200 h-72'>
-                                    <div className='flex justify-between items-center '>
-                                        <div className='flex'>
-                                            <div className='w-12 h-12 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
-                                                <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
-                                            </div>
-                                            <div className='font-semibold'>
-                                                <p>{card.title}</p>
-                                                <i className='flex text-sm'>
-                                                    {
-                                                        card.star.map((star) => (
-                                                            <IoIosStar style={{ paddingRight: '2px' }} color={star} />
-                                                        ))
-                                                    }
-                                                </i>
-                                            </div>
+                <OwlCarousel className='owl-theme' autoplay={true} autoplayTimeout={3000}  margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
+                    {
+                        cards.map((card) => (
+                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200 h-72 border-1 dark:border-white'>
+                                <div className='flex justify-between items-center'>
+                                    <div className='flex'>
+                                        <div className='w-12 h-12 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
+                                            <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
                                         </div>
-                                        <div className='items-end text-2xl'>
-                                            {card.bookmark}
+                                        <div className='font-semibold'>
+                                            <p>{card.title}</p>
+                                            <i className='flex text-sm'>
+                                                {
+                                                    card.star.map((star) => (
+                                                        <IoIosStar style={{ paddingRight: '2px' }} color={star} />
+                                                    ))
+                                                }
+                                            </i>
                                         </div>
                                     </div>
-                                    <div className='my-5 text-md h-20'>
-                                        {card.description}
-                                    </div>
-                                    <div className='mb-6 text-sm h-7'>
-                                        {card.tags}
-                                    </div>
-                                    <div className='flex justify-between my-4' >
-                                        <p className='text-md font-semibold'>{card.buttonText}</p>
-                                        <div className='flex items-center px-1 rounded dark:border-slate-50 border-1 border-dark-black'>
-                                            <p className='text-md'>Visit</p>
-                                            <i>{card.visit}</i>
-                                        </div>
+                                    <div className='items-end text-2xl'>
+                                        {card.bookmark}
                                     </div>
                                 </div>
-                            ))
-                        }
-                    </OwlCarousel>
-                </div>
+                                <div className='my-5 text-md h-20'>
+                                    {card.description}
+                                </div>
+                                <div className='mb-6 text-sm h-7'>
+                                    {card.tags}
+                                </div>
+                                <div className='flex justify-between my-4' >
+                                    <p className='text-md font-semibold'>{card.buttonText}</p>
+                                    <div className='flex items-center px-1 rounded dark:border-slate-50 border-1 border-dark-black'>
+                                        <p className='text-md'>Visit</p>
+                                        <i>{card.visit}</i>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </OwlCarousel>
             </div>
         </div>
-    )
+)
 }
 
 export default Cards;
