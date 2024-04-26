@@ -10,7 +10,9 @@ function Sliderbar() {
     }
     return (
         <div>
+
             <div class="dark:text-white dark:bg-dark-black text-black p-4 border-e-2 w-2/12 h-[100vh] ps-5">
+
                 <h2 class="font-bold mb-4">Category</h2>
                 <ul class="space-y-2">
                     <li className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1  rounded-lg hover:text-white'><a href="#">Photo Editing</a></li>
