@@ -12,13 +12,14 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Favourites from './components/Favourites';
 import About from './components/About';
-import Homemain from "./components/Homemain";
+import Home from "./components/Home";
+// import Homemain from "./components/Homemain";
 function App() {
   return (
     <div>
      
       <Routes>
-        <Route path="/" element={ <Homemain/> } />
+        <Route path="/" element={ <Home/> } />
         <Route path="/AI-Tools" element={ <AI_Tools/> } />
         <Route path="/AI-News" element={ <AI_News/> } />
         <Route path="/Blog" element={ <Blog/> } />
