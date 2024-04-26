@@ -413,7 +413,7 @@ function Cards() {
             </div>
             <div className='w-10/12'>
                 <div className='flex  justify-between'>
-                    <OwlCarousel className='owl-theme' margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
+                    <OwlCarousel className='owl-theme' autoPlay={true} autoplayTimeout={3000} margin={12} loop dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
                         {
                             cards.map((card) => (
                                 <div className=' border-2 rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200 h-72'>
