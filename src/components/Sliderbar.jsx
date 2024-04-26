@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BiCategory } from 'react-icons/bi';
 import { categorydata } from '../store/counter/counterSlice';
 function Sliderbar() {
-    const allData = useSelector(state => state.counter.alldata);
+    // const allData = useSelector(state => state.counter.alldata);
     const [isOpen, setIsOpen] = useState(false);
     let dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ function Sliderbar() {
 
                     <li onClick={() => getcatdata("Photo Editor")} Z className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1  rounded-lg hover:text-white'><a href="#" >Photo Editing</a></li>
                     <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Video Editing</a></li>
-                    <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Text To Speech</a></li>
+                    <li onClick={() => getcatdata("Text to Speech")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Text To Speech</a></li>
                     <li onClick={() => getcatdata("Logo Generator")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Logo Generator</a></li>
                     <li>
                         <button
@@ -47,17 +47,17 @@ function Sliderbar() {
                                 } ${isOpen ? 'border' : 'border-none'
                                 }`}
                         >
-                            <li className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
+                            <li onClick={() => getcatdata("Marketing")} className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
                                 <a href="#">
                                     Marketing
                                 </a>
                             </li>
-                            <li className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
+                            <li onClick={() => getcatdata("Productivity")}  className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
                                 <a href="#">
                                     Productivity
                                 </a>
                             </li>
-                            <li className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
+                            <li  onClick={() => getcatdata("SEO")}  className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
                                 <a href="#">
                                     SEO and Finance
                                 </a>

@@ -1,10 +1,8 @@
-
-
 import { createSlice } from '@reduxjs/toolkit';
-import { HiExternalLink } from "react-icons/hi";
-import { FiBookmark } from "react-icons/fi";
+// import { HiExternalLink } from "react-icons/hi";
+// import { FiBookmark } from "react-icons/fi";
 // import FiBookmark from 'react-icons/fi'
-import { IoIosStar } from "react-icons/io";
+// import { IoIosStar } from "react-icons/io";
 
 // // Import your image assets here
 // // import icon1 from '/src/assets/c_img1.svg';
@@ -24,6 +22,18 @@ import icon13 from '/src/assets/c_img13.svg'
 import icon14 from '/src/assets/c_img14.svg'
 import icon15 from '/src/assets/c_img15.svg'
 import icon16 from '/src/assets/c_img16.svg'
+import icon18 from '/src/assets/c_img18.jpg'
+import icon19 from '/src/assets/c_img19.svg'
+import icon20 from '/src/assets/c_img20.jpg'
+import icon17 from '/src/assets/c_img17.jpg'
+import icon21 from '/src/assets/c_img21.svg'
+import icon22 from '/src/assets/c_img22.png'
+import icon23 from '/src/assets/c_img23.png'
+import icon24 from '/src/assets/c_img24.png'
+import icon25 from '/src/assets/c_img25.svg'
+import icon26 from '/src/assets/c_img26.svg'
+import icon27 from '/src/assets/c_img27.svg'
+import icon28 from '/src/assets/c_img28.png'
 // import { FiBookmark } from 'react-icons/fi';
 // Import other icons as needed...
 
@@ -207,6 +217,192 @@ const initialState = {
             // visit: <HiExternalLink />,
             cate: 'Marketing',
         },
+        {
+            icon: icon17,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'TeamSmartAI',
+            description: 'Assemble your AI team and become more productive...',
+            tags: ['#productivity'],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+        },
+        {
+            icon: icon18,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Bard for Google Pro',
+            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
+            tags: ['#productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon19,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Pets',
+            description: 'Task management and productivity tracking...',
+            tags: ['#Productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon20,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Vibes',
+            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
+            tags: ['#prompt generator'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+        },
+        {
+            icon: icon17,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Unreal Speech',
+            description: 'Low cost Text-to-Speech API with human-like AI voices...',
+            tags: ['#text to speech', " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+        },
+        {
+            icon: icon18,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Bard for Google Pro',
+            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
+            tags: ['#productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon19,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Pets',
+            description: 'Task management and productivity tracking...',
+            tags: ['#Productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon20,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Vibes',
+            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
+            tags: ['#prompt generator'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+        },
+        {
+            icon: icon21,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Unreal Speech',
+            description: 'Low cost Text-to-Speech API with human-like AI voices...',
+            tags: ['#text to speech', " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+        },
+        {
+            icon: icon22,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Speechify',
+            description: 'Transform text into lifelike speech, enhancing accessibility and...',
+            tags: ['#text to speech'],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+
+        },
+        {
+            icon: icon23,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Suno AI Bark',
+            description: 'Transform text into diverse, realistic audio with generative AI technology...',
+            tags: ['#Music', " #audio editing", " #text to speech"],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+
+        },
+        {
+            icon: icon24,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Murf',
+            description: 'Elevate content with lifelike AI voiceovers in 20+ languages and..',
+            tags: ['#marketing', " #education", " #text to speech"],
+            buttonText: 'Free Trial',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+        },
+
+        {
+            icon: icon25,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Gizzmo',
+            description: 'Gizzmo WP plugin creates Amazon affiliate articles in just two clicks...',
+            tags: ['#SEO', " #copywriter"],
+            buttonText: 'Free Trial',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+        },
+        {
+            icon: icon26,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'MarketMuse',
+            description: 'Revolutionize content strategy with AI-driven research, planning, and...',
+            tags: ['#marketing', " #SEO", " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+
+        },
+        {
+            icon: icon27,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'SEO Content AI',
+            description: 'Maximize your online presence with AI-driven, SEO-optimized content...',
+            tags: ['#marketing', " #SEO", " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+
+        },
+        {
+            icon: icon28,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Drafthorse AI',
+            description: 'Boost online presence with AI-driven, SEO-optimized content',
+            tags: ['#marketing', " #SEO"],
+            buttonText: 'Free Trial',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+        },
+
     ],
     alldata: [
         {
@@ -387,6 +583,192 @@ const initialState = {
             // visit: <HiExternalLink />,
             cate: 'Marketing',
         },
+        {
+            icon: icon17,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'TeamSmartAI',
+            description: 'Assemble your AI team and become more productive...',
+            tags: ['#productivity'],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+        },
+        {
+            icon: icon18,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Bard for Google Pro',
+            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
+            tags: ['#productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon19,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Pets',
+            description: 'Task management and productivity tracking...',
+            tags: ['#Productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon20,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Vibes',
+            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
+            tags: ['#prompt generator'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+        },
+        {
+            icon: icon17,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Unreal Speech',
+            description: 'Low cost Text-to-Speech API with human-like AI voices...',
+            tags: ['#text to speech', " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+        },
+        {
+            icon: icon18,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Bard for Google Pro',
+            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
+            tags: ['#productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon19,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Pets',
+            description: 'Task management and productivity tracking...',
+            tags: ['#Productivity'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+
+        },
+        {
+            icon: icon20,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Productivity Vibes',
+            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
+            tags: ['#prompt generator'],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Productivity',
+        },
+        {
+            icon: icon21,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Unreal Speech',
+            description: 'Low cost Text-to-Speech API with human-like AI voices...',
+            tags: ['#text to speech', " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+        },
+        {
+            icon: icon22,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Speechify',
+            description: 'Transform text into lifelike speech, enhancing accessibility and...',
+            tags: ['#text to speech'],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+
+        },
+        {
+            icon: icon23,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Suno AI Bark',
+            description: 'Transform text into diverse, realistic audio with generative AI technology...',
+            tags: ['#Music', " #audio editing", " #text to speech"],
+            buttonText: 'Free',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+
+        },
+        {
+            icon: icon24,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Murf',
+            description: 'Elevate content with lifelike AI voiceovers in 20+ languages and..',
+            tags: ['#marketing', " #education", " #text to speech"],
+            buttonText: 'Free Trial',
+            // visit: <HiExternalLink />,
+            cate: 'Text to Speech',
+        },
+
+        {
+            icon: icon25,
+            // bookmark: <FiBookmark />,
+            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
+            title: 'Gizzmo',
+            description: 'Gizzmo WP plugin creates Amazon affiliate articles in just two clicks...',
+            tags: ['#SEO', " #copywriter"],
+            buttonText: 'Free Trial',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+        },
+        {
+            icon: icon26,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'MarketMuse',
+            description: 'Revolutionize content strategy with AI-driven research, planning, and...',
+            tags: ['#marketing', " #SEO", " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+
+        },
+        {
+            icon: icon27,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'SEO Content AI',
+            description: 'Maximize your online presence with AI-driven, SEO-optimized content...',
+            tags: ['#marketing', " #SEO", " #research"],
+            buttonText: 'Freemium',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+
+        },
+        {
+            icon: icon28,
+            // bookmark: <FiBookmark />,
+            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
+            title: 'Drafthorse AI',
+            description: 'Boost online presence with AI-driven, SEO-optimized content',
+            tags: ['#marketing', " #SEO"],
+            buttonText: 'Free Trial',
+            // visit: <HiExternalLink />,
+            cate: 'SEO',
+        },
+
     ],
     // carddata:[],
     // singlecate:''
@@ -406,6 +788,7 @@ const counterSlice = createSlice({
             //     var cat="Photo Editing"
             // }
             // let cat=action.payload;
+            // 
             var carddata = state.alldata.filter((ele) => {
                 return ele.cate === action.payload
             })
