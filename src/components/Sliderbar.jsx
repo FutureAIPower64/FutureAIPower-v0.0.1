@@ -10,7 +10,7 @@ function Sliderbar() {
     }
     return (
         <div>
-            <div class="dark:text-white dark:bg-dark-black text-black p-4 w-2/12 h-[100vh] ps-5">
+            <div class="dark:text-white dark:bg-dark-black text-black p-4 border-e-2 w-2/12 h-[100vh] ps-5">
                 <h2 class="font-bold mb-4">Category</h2>
                 <ul class="space-y-2">
                     <li className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1  rounded-lg hover:text-white'><a href="#">Photo Editing</a></li>
@@ -27,8 +27,8 @@ function Sliderbar() {
                                 className={`transform transition duration-300 inline-block ml-2 ${isOpen ? 'rotate-180' : ''
                                     }`}
                             >
-                                <div className='bg-gray-200 rounded-full p-1 dark:text-white dark:bg-transparent'>
-                                    <GoTriangleDown className='' />
+                                <div className='p-1 dark:text-white'>
+                                    <GoTriangleDown/>
                                 </div>
                             </span>
                         </button>
