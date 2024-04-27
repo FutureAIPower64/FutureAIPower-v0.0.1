@@ -1,18 +1,18 @@
-import React from "react";
-import Header from "./Header";
-import Box from "./Box";
-import Sliderbar from "./Sliderbar";
-import { useSelector } from "react-redux";
-function Home() {
-  // const mode = useSelector(state => state.counter.mode);
+import React from 'react'
+import Header from './Header'
+import Sliderbar from './Sliderbar'
+import Box from './Box'
+import Cards from './Cards'
 
+function Home() {
   return (
     <div >
       <Header />
-      <Sliderbar></Sliderbar>
-      <Box></Box>
+      {/* <Sliderbar /> */}
+      <Cards></Cards>
+      <Box />
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

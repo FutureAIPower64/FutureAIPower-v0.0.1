@@ -3,20 +3,32 @@ import { useState } from 'react';
 import { GoTriangleDown } from "react-icons/go";
 import ToggleSwitch from './ToggleSwitch';
 import DummyData from './DummyData';
+import { useDispatch, useSelector } from 'react-redux';
+import { BiCategory } from 'react-icons/bi';
+import { categorydata } from '../store/counter/counterSlice';
+import { IoConstruct } from 'react-icons/io5';
 function Sliderbar() {
+    // const allData = useSelector(state => state.counter.alldata);
     const [isOpen, setIsOpen] = useState(false);
+    const dispatch = useDispatch();
+
+ 
     const toggleAccordion = () => {
         setIsOpen(!isOpen);
     }
+    const getcatdata = (e) => {
+        dispatch(categorydata(e));
+    }
     return (
-        <div>
-            <div class="dark:text-white dark:bg-dark-black text-black p-4 border-e-2 w-2/12 h-[100vh] ps-5">
+        <>
+            <div class="dark:text-white dark:bg-dark-black text-black p-4  border h-[100vh] ps-5">
                 <h2 class="font-bold mb-4">Category</h2>
                 <ul class="space-y-2">
-                    <li className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1  rounded-lg hover:text-white'><a href="#">Photo Editing</a></li>
-                    <li className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Video Editing</a></li>
-                    <li className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Text To Speech</a></li>
-                    <li className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Logo Generator</a></li>
+
+                    <li onClick={() => getcatdata("Photo Editor")} className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1 rounded-lg hover:text-white'><a href="#" >Photo Editing</a></li>
+                    <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Video Editing</a></li>
+                    <li onClick={() => getcatdata("Text to Speech")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Text To Speech</a></li>
+                    <li onClick={() => getcatdata("Logo Generator")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Logo Generator</a></li>
                     <li>
                         <button
                             className=" flex items-center justify-between w-full hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1 mb-1 hover:text-white  rounded-lg"
@@ -37,17 +49,17 @@ function Sliderbar() {
                                 } ${isOpen ? 'border' : 'border-none'
                                 }`}
                         >
-                            <li className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
+                            <li onClick={() => getcatdata("Marketing")} className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
                                 <a href="#">
                                     Marketing
                                 </a>
                             </li>
-                            <li className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
+                            <li onClick={() => getcatdata("Productivity")}  className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
                                 <a href="#">
                                     Productivity
                                 </a>
                             </li>
-                            <li className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
+                            <li  onClick={() => getcatdata("SEO")}  className="py-1 px-3 hover:bg-hover-blue hover:text-white dark:hover:bg-gray-700">
                                 <a href="#">
                                     SEO and Finance
                                 </a>
@@ -76,7 +88,9 @@ function Sliderbar() {
                 {/* <ToggleSwitchitch mode={mode} setMode={setMode} />
                 <DummyDataata /> */}
             </div>
-        </div>
+        </>
+
+
     )
 }
 
