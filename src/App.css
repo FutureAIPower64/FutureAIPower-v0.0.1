@@ -1,0 +1,21 @@
+#AI_Tools.owl-theme .owl-nav {
+    position: absolute;
+    left: 0;
+}
+
+#AI_Tools.owl-carousel .owl-nav button {
+    border-radius: 50%;
+}
+
+#AI_Tools.owl-carousel .owl-nav button span {
+    display: block !important;
+    font-size: 20px;
+    background-color: #E2E8F0 !important; 
+    border-radius: 50%;
+    padding: 0px 15px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+#AI_Tools.owl-carousel .owl-nav button span:hover {
+    color: black !important;
+}
