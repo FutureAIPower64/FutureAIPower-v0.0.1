@@ -8,38 +8,26 @@
 }
 
 
-#light.owl-carousel .owl-nav button span {
-
+#light .owl-nav button span {
     display: block !important;
     font-size: 20px;
-    background-color: black !important; 
+    background-color: #E2E8F0; 
     border-radius: 50%;
     padding: 0px 15px;
     padding-bottom: 4px;
-    border: 1px solid white;
-    color: white;
+    border: 2px solid #27272a;
+    color: black;
 }
 
 #light.owl-carousel .owl-nav button span:hover {
-
     color: white !important;
 }
 
 
 
-#dark.owl-carousel .owl-nav button span {
 
-    display: block !important;
-    font-size: 20px;
-    background-color: #E2E8F0 !important; 
-    border-radius: 50%;
-    padding: 0px 15px;
-    padding-bottom: 4px;
-    border: 1px solid black;
-    color: black;
-}
 
-#dark.owl-carousel .owl-nav button span:hover {
-
-    color: black !important;
+.bg-dark-color span{
+    color: white !important;
+    background-color: black !important;
 }
