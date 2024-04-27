@@ -7,7 +7,7 @@
     border-radius: 50%;
 }
 
-#dark.owl-carousel .owl-nav button span {
+#light.owl-carousel .owl-nav button span {
     display: block !important;
     font-size: 20px;
     background-color: black !important; 
@@ -17,12 +17,12 @@
     border: 1px solid white;
     color: white;
 }
-#dark.owl-carousel .owl-nav button span:hover {
+#light.owl-carousel .owl-nav button span:hover {
     color: white !important;
 }
 
 
-#light.owl-carousel .owl-nav button span {
+#dark.owl-carousel .owl-nav button span {
     display: block !important;
     font-size: 20px;
     background-color: #E2E8F0 !important; 
@@ -32,6 +32,6 @@
     border: 1px solid black;
     color: black;
 }
-#light.owl-carousel .owl-nav button span:hover {
+#dark.owl-carousel .owl-nav button span:hover {
     color: black !important;
 }
