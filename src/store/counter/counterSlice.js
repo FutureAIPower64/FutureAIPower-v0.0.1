@@ -782,19 +782,22 @@ const counterSlice = createSlice({
             state.mode = action.payload;
         },
         categorydata: (state, action) => {
-            // var singlecate=action.payload;
-            // console.log(singlecate);
-            // if(action.payload==="PhotoEditing"){
-            //     var cat="Photo Editing"
-            // }
-            // let cat=action.payload;
-            // 
-            var carddata = state.alldata.filter((ele) => {
-                return ele.cate === action.payload
-            })
-            state.cards = carddata;
-            console.log(state.cards);
-        },
+            // Assuming action.payload contains the category to filter by
+            const category = action.payload; // Assuming the payload is the category name
+        
+            // Filter data based on the category
+            const filteredData = state.alldata.filter((item) => {
+                // Assuming 'cate' is the key for category in each item of state.alldata
+                return item.cate === category;
+            });
+        
+            // Update state with the filtered data
+            return {
+                ...state,
+                cards: filteredData
+            };
+        }
+        
     },
 });
 

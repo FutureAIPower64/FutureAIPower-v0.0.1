@@ -6,16 +6,18 @@ import DummyData from './DummyData';
 import { useDispatch, useSelector } from 'react-redux';
 import { BiCategory } from 'react-icons/bi';
 import { categorydata } from '../store/counter/counterSlice';
+import { IoConstruct } from 'react-icons/io5';
 function Sliderbar() {
     // const allData = useSelector(state => state.counter.alldata);
     const [isOpen, setIsOpen] = useState(false);
-    let dispatch = useDispatch();
+    const dispatch = useDispatch();
 
+ 
     const toggleAccordion = () => {
         setIsOpen(!isOpen);
     }
     const getcatdata = (e) => {
-        dispatch(categorydata(e))
+        dispatch(categorydata(e));
     }
     return (
         <>
@@ -23,7 +25,7 @@ function Sliderbar() {
                 <h2 class="font-bold mb-4">Category</h2>
                 <ul class="space-y-2">
 
-                    <li onClick={() => getcatdata("Photo Editor")} Z className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1  rounded-lg hover:text-white'><a href="#" >Photo Editing</a></li>
+                    <li onClick={() => getcatdata("Photo Editor")} className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1  rounded-lg hover:text-white'><a href="#" >Photo Editing</a></li>
                     <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Video Editing</a></li>
                     <li onClick={() => getcatdata("Text to Speech")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Text To Speech</a></li>
                     <li onClick={() => getcatdata("Logo Generator")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Logo Generator</a></li>
