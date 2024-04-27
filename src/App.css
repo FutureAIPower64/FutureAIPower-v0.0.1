@@ -7,7 +7,9 @@
     border-radius: 50%;
 }
 
+
 #light.owl-carousel .owl-nav button span {
+
     display: block !important;
     font-size: 20px;
     background-color: black !important; 
@@ -17,12 +19,16 @@
     border: 1px solid white;
     color: white;
 }
+
 #light.owl-carousel .owl-nav button span:hover {
+
     color: white !important;
 }
 
 
+
 #dark.owl-carousel .owl-nav button span {
+
     display: block !important;
     font-size: 20px;
     background-color: #E2E8F0 !important; 
@@ -32,6 +38,8 @@
     border: 1px solid black;
     color: black;
 }
+
 #dark.owl-carousel .owl-nav button span:hover {
+
     color: black !important;
 }

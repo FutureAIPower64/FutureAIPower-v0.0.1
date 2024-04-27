@@ -1,5 +1,8 @@
+
 import './App.css';
+
 import React, { useEffect } from "react";
+
 import { Routes, Route } from "react-router-dom"
 import AI_Tools from './components/AI_Tools';
 import AI_News from './components/AI_News';
