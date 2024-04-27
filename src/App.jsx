@@ -1,17 +1,16 @@
-// import React, { useState } from 'react'
-// import DummyData from './components/DummyData';
-// import ToggleSwitch from './components/ToggleSwitch';
-// import Header from './components/Header';
+
+import './App.css';
 
 import React, { useEffect } from "react";
+
 import { Routes, Route } from "react-router-dom"
-import Home from './components/Home';
 import AI_Tools from './components/AI_Tools';
 import AI_News from './components/AI_News';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Favourites from './components/Favourites';
 import About from './components/About';
+import Home from "./components/Home";
 import { useSelector } from "react-redux";
 function App() {
   const mode = useSelector(state=> state.counter.mode);
