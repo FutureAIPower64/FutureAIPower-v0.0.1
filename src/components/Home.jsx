@@ -1,27 +1,23 @@
 
-import React, { useState } from 'react'
-import ToggleSwitch from './ToggleSwitch'
-import DummyData from './DummyData'
+import React from 'react'
 import Header from './Header'
+import Sliderbar from './Sliderbar'
 import Box from './Box'
 import Cards from './Cards'
 
-import Sliderbar from "./Sliderbar";
-import { useSelector } from "react-redux";
 
 function Home() {
-  // const mode = useSelector(state => state.counter.mode);
-
   return (
 
     <div >
       <Header />
-      <Sliderbar></Sliderbar>
-      <Box></Box>
+
+      {/* <Sliderbar /> */}
       <Cards></Cards>
+      <Box />
 
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
