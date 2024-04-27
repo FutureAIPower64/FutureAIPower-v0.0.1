@@ -38,6 +38,7 @@ import icon28 from '/src/assets/c_img28.png'
 // Import other icons as needed...
 
 const initialState = {
+    mode: localStorage.getItem('mode') || 'light',
     cards: [
         {
             icon: icon1,
@@ -778,27 +779,30 @@ const counterSlice = createSlice({
     name: 'counter',
     initialState,
     reducers: {
-        changeMode: (state, action) => {
-            state.mode = action.payload;
-        },
+
         categorydata: (state, action) => {
             // Assuming action.payload contains the category to filter by
             const category = action.payload; // Assuming the payload is the category name
-        
+
             // Filter data based on the category
             const filteredData = state.alldata.filter((item) => {
                 // Assuming 'cate' is the key for category in each item of state.alldata
                 return item.cate === category;
             });
-        
+
             // Update state with the filtered data
             return {
                 ...state,
                 cards: filteredData
             };
-        }
-        
-    },
+        },
+
+
+        changeMode: (state, action) => {
+            localStorage.setItem('mode', action.payload)
+            state.mode = action.payload;
+        },
+    }
 });
 
 export const { changeMode, categorydata } = counterSlice.actions;
