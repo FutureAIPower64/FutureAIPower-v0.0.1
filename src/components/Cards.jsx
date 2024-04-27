@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-
 import { HiExternalLink } from "react-icons/hi";
 import { FiBookmark } from "react-icons/fi";
 import { IoIosStar } from "react-icons/io";
@@ -13,16 +12,24 @@ import { useSelector } from 'react-redux';
 function Cards() {
     let cards = useSelector(state => state.counter.cards);
     let mode = useSelector(state => state.counter.mode);
+    useEffect(()=>{
+        if(mode === "dark"){
+        var btn1 = document.getElementsByClassName('owl-prev')[0];
+        var btn2 = document.getElementsByClassName('owl-next')[0];
+        btn1.classList.add("bg-dark-color");
+        btn2.classList.add("bg-dark-color");
+        }
+    },[mode])
     return (
-        <div className='flex py-10'>
-            <div className='w-2/12'>
+        <div className='flex '>
+            <div className='w-3/12 lg:w-3/12 xl:w-2/12'>
                 <Sliderbar></Sliderbar>
             </div>
-            <div className='w-10/12'>
-                <OwlCarousel className='owl-theme AI_Tools' id={mode} nav margin={12} dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 4 } }}>
+            <div className='w-9/12 lg:w-9/12 xl:w-10/12 pt-10 px-10'>
+                <OwlCarousel className='owl-theme AI_Tools' id='light' nav margin={12} dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 3 },1299:{items:4} }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200  border-1 dark:border-white'>
+                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200  border-1 dark:border-main-border'>
                                 <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
                                         <div className='w-12 h-12 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
@@ -40,9 +47,7 @@ function Cards() {
                                         </div>
                                     </div>
                                     <div className='items-end text-2xl'>
-
                                         <FiBookmark></FiBookmark>
-
                                     </div>
                                 </div>
                                 <div className='my-5 text-md h-20'>
@@ -54,10 +59,8 @@ function Cards() {
                                 <div className='flex justify-between my-4' >
                                     <p className='text-md font-semibold'>{card.buttonText}</p>
                                     <div className='flex items-center px-1 rounded dark:border-slate-50 border-1 border-dark-black'>
-
                                         <p className='text-md me-2'>Visit</p>
                                         <HiExternalLink ></HiExternalLink>
-
                                     </div>
                                 </div>
                             </div>
@@ -69,6 +72,4 @@ function Cards() {
     )
 }
 
-
 export default Cards;
-
