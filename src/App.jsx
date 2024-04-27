@@ -1,9 +1,14 @@
+
+
+import './App.css';
+
 // import React, { useState } from 'react'
 // import DummyData from './components/DummyData';
 // import ToggleSwitch from './components/ToggleSwitch';
 // import Header from './components/Header';
 
 import React, { useEffect } from "react";
+
 import { Routes, Route } from "react-router-dom"
 import Home from './components/Home';
 import AI_Tools from './components/AI_Tools';
