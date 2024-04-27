@@ -30,7 +30,7 @@ function Cards() {
                 <OwlCarousel className='owl-theme AI_Tools' id='light' nav margin={12} dots={false} responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 3 },1299:{items:4} }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200  border-1 dark:border-white'>
+                            <div className='rounded-lg px-4 py-3  dark:bg-dark-black dark:text-white w-full bg-slate-200  border-1 dark:border-main-border'>
                                 <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
                                         <div className='w-12 h-12 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>

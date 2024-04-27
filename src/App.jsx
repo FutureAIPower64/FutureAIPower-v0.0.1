@@ -1,5 +1,8 @@
+
 import './App.css';
+
 import React, { useEffect } from "react";
+
 import { Routes, Route } from "react-router-dom"
 import AI_Tools from './components/AI_Tools';
 import AI_News from './components/AI_News';
@@ -12,7 +15,7 @@ import { useSelector } from "react-redux";
 function App() {
   const mode = useSelector(state=> state.counter.mode);
   return (
-    <div data-mode={mode}>
+    <div data-mode={mode} className='dark:bg-black'>
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/AI-Tools" element={ <AI_Tools/> } />

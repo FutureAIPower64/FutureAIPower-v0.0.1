@@ -11,16 +11,21 @@
 #light .owl-nav button span {
     display: block !important;
     font-size: 20px;
+    background-color: #E2E8F0; 
     border-radius: 50%;
     padding: 0px 15px;
     padding-bottom: 4px;
-    border: 1px solid black;
+    border: 2px solid #27272a;
     color: black;
 }
 
-#light .owl-nav button span:hover {
-    color: black !important;
+#light.owl-carousel .owl-nav button span:hover {
+    color: white !important;
 }
+
+
+
+
 
 .bg-dark-color span{
     color: white !important;
