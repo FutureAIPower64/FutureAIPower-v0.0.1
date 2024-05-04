@@ -6,8 +6,11 @@ import Cards from './Cards'
 function Home() {
   return (
     <div >
-      <Header />
+      <div className='h-[60px]'>
+        <Header />
+      </div>
       <Cards></Cards>
+      {/* <News /> */}
       <Box />
 
     </div>
