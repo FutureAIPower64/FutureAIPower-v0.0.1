@@ -11,7 +11,6 @@ function Home() {
 
     <div >
       <Header />
-
       {/* <Sliderbar /> */}
       <Cards></Cards>
       <Box />
