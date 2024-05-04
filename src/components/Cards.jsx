@@ -5,7 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { HiExternalLink } from "react-icons/hi";
 import { FiBookmark } from "react-icons/fi";
 import { IoIosStar } from "react-icons/io";
-import Sliderbar from './Sliderbar';
+// import Sliderbar from './Sliderbar';
 import { useSelector } from 'react-redux';
 
 
