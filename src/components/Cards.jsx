@@ -7,6 +7,7 @@ import { FiBookmark } from "react-icons/fi";
 import { IoIosStar } from "react-icons/io";
 import Sliderbar from './Sliderbar';
 import { useSelector } from 'react-redux';
+import BlogHead from './BlogHead';
 
 
 function Cards() {
@@ -23,10 +24,7 @@ function Cards() {
     return (
         <>
             <div className='pt-10 px-10'>
-                <div>
-                    <h2 className='dark:text-white text-black text-2xl font-semibold pb-5'>Top AI Tools</h2>
-                    <div className='w-full bg-card-border mb-5' style={{height:"1px"}}></div>
-                </div>
+               <BlogHead head={'AI Tools'} desc={'Read AI Related Tools. Updated daily.'} ></BlogHead>
                 <OwlCarousel className='owl-theme AI_Tools' id='light' nav margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 },1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
