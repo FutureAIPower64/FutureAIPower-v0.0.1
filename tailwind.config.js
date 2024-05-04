@@ -12,7 +12,9 @@ export default {
         "hover-black": '#27272A',
         "hover-grey": '#F4F4F5',
         "hover-blue": 'rgba(23, 37, 84, 0.7)',
-        "main-border":"#27272a"
+        "main-border":"#27272a",
+        "card-color":" #020817",
+        "card-border":"#121b2b",
       },
       height: {
         "box":"348px",
