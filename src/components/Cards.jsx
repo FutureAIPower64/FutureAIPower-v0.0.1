@@ -12,7 +12,6 @@ import { useSelector } from 'react-redux';
 function Cards() {
     let cards = useSelector(state => state.counter.cards);
     let mode = useSelector(state => state.counter.mode);
-    // updated ciode --------------
     useEffect(()=>{
         if(mode === "dark"){
         var btn1 = document.getElementsByClassName('owl-prev')[0];
