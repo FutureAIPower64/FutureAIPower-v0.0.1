@@ -23,13 +23,13 @@ function Cards() {
     return (
         <>
             <div className='pt-10 px-10'>
-                <BlogHead head={'AI Tools'} desc={'Read AI Related Tools. Updated daily.'} ></BlogHead>
-                <OwlCarousel className='owl-theme AI_Tools' id='light' nav margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 }, 1100: { items: 4 }, 1299: { items: 5 } }}>
+                <BlogHead head={'Top AI Tools'} desc={'Read AI Related Tools. Updated daily.'} ></BlogHead>
+                <OwlCarousel className='owl-theme AI_Tools' id='light' nav={false} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 }, 1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-lg px-4 py-3  dark:bg-card-color dark:text-white w-full bg-slate-200  border dark:border-card-border'>
+                            <div className='rounded-lg px-4 py-3  dark:bg-card-color dark:text-white w-full bg-slate-200  border-1 border-blue-300  dark:border-card-border hover:border-blue-500 duration-300'>
                                 <div className='flex justify-between items-center  h-14'>
-                                    <div className='flex'>
+                                    <div className='flex'>  
                                         <div className='w-10 h-10 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
                                             <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
                                         </div>
@@ -56,10 +56,10 @@ function Cards() {
                                 </div>
                                 <div className='flex justify-between my-4' >
                                     <p className='text-md font-semibold text-sm'>{card.buttonText}</p>
-                                    <div className='flex items-center px-1 rounded dark:bg-blue-600 dark:border-card-color border-1 border-dark-black'>
-                                        <p className='text-md me-2 text-sm'>Visit</p>
+                                    <buttton className='flex items-center px-1 rounded cursor-pointer dark:bg-blue-500 dark:text-black dark:font-semibold bg-blue-200 hover:bg-blue-600 hover:text-white duration-300 dark:border-card-color border-1 border-cyan-600'>
+                                        <p className='text-sm me-2 '>Visit</p>
                                         <HiExternalLink ></HiExternalLink>
-                                    </div>
+                                    </buttton>
                                 </div>
                             </div>
                         ))

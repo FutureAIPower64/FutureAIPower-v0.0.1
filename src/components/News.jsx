@@ -41,32 +41,35 @@ function News() {
         },
     ]
 
-    useEffect(()=>{
-        if(mode === "dark"){
-        var btn1 = document.getElementsByClassName('owl-prev')[1];
-        var btn2 = document.getElementsByClassName('owl-next')[1];
-        btn1.classList.add("bg-dark-color");
-        btn2.classList.add("bg-dark-color");
+    useEffect(() => {
+        if (mode === "dark") {
+            var btn1 = document.getElementsByClassName('owl-prev')[1];
+            var btn2 = document.getElementsByClassName('owl-next')[1];
+            btn1.classList.add("bg-dark-color");
+            btn2.classList.add("bg-dark-color");
         }
-    },[mode])
+    }, [mode])
     return (
         <div className='pt-10 px-10'>
             <BlogHead head={'AI News'} desc={'Read AI Related News. Updated daily.'} />
-            <OwlCarousel className='owl-theme AI_Tools' id='light' nav margin={20} dots={false} loop  responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 3 }, 1299: { items: 4 } }} >
+            <OwlCarousel className='owl-theme news_Slider' id='light' nav margin={20} dots={false} loop responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 3 }, 1299: { items: 4 } }} >
                 {newsData &&
                     newsData.map((ele, ind) => {
                         return (
-                            <div key={ind} className='dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 text-black p-3 rounded-md' style={{borderWidth:"2px",borderStyle:"solid"}}>
-                                <img src={ele.img} className='w-full rounded-md h-[160px] border-1 dark:border-card-border' alt="" style={{borderWidth:"2px",borderStyle:"solid"}} />
+                            <div key={ind} className='dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 border-blue-300 hover:border-blue-500 duration-300 hover:border-1 text-black p-3 rounded-md' style={{ borderWidth: "1px", borderStyle: "solid" }}>
+                                <img src={ele.img} className='w-full rounded-md h-[160px] dark:border-card-border ' alt="" style={{ borderWidth: "2px", borderStyle: "solid" }} />
                                 <div className='p-3'>
-                                    <p className='text-sm font-semibold text-blue-200 pb-2'>{ele.date}</p>
+                                    <p className='text-sm font-semibold text-blue-900 dark:text-blue-200 pb-2'>{ele.date}</p>
                                     <p className='h-12 text-md'>{ele.desc}</p>
-                                    <button className='flex items-top gap-0 text-sm mt-4'>Read More <MdOutlineArrowRightAlt className='text-2xl'/> </button>
+                                    <button className='flex items-top gap-0 text-sm mt-4 '>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
                                 </div>
                             </div>
                         )
                     })}
             </OwlCarousel>
+            <div className="flex justify-center md:justify-end mt-14 md:mt-4">
+                <button className='py-2 px-5 border-1 dark:bg-white dark:text-black font-semibold dark:border-main-border border-blue-400 text-white bg-blue-600 rounded-md'>Read All News</button>
+            </div>
         </div>
     )
 }
