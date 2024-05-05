@@ -10,7 +10,6 @@ function Home() {
         <Header />
       </div>
       <Cards></Cards>
-      {/* <News /> */}
       <Box />
 
     </div>
