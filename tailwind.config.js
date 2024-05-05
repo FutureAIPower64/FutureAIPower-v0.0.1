@@ -13,8 +13,8 @@ export default {
         "hover-grey": '#F4F4F5',
         "hover-blue": 'rgba(23, 37, 84, 0.7)',
         "main-border":"#27272a",
-        "dark-text": "#6E6D71",
-        "light-bg": "#E2E8F0"
+        "card-color":" #020817",
+        "card-border":"#121b2b",
       },
       height: {
         "box":"348px",
@@ -29,6 +29,13 @@ export default {
         xl: '5rem',
         '2xl': '6rem',
       },
+    },
+    screens: {
+      'sm': '640px', 
+      'md': '768px', 
+      'lg': '1024px', 
+      'xl': '1280px', 
+      '2xl': '1536px', 
     },
     borderWidth: {
       '1': '1px',
