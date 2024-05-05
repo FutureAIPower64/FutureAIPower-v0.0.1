@@ -25,7 +25,7 @@ function Cards() {
         <>
             <div className='pt-10 px-10'>
                <BlogHead head={'AI Tools'} desc={'Read AI Related Tools. Updated daily.'} ></BlogHead>
-                <OwlCarousel className='owl-theme AI_Tools' id='light' autoplay={true} autoplayTimeout={5000} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 },1100: { items: 4 }, 1299: { items: 5 } }}>
+                <OwlCarousel className='owl-theme AI_Tools' id='light' autoplay={true} autoplayTimeout={5000} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 4 },1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
                             <div className='rounded-lg px-4 py-3  dark:bg-card-color dark:text-white w-full bg-slate-100  border-1  dark:border-card-border '>
