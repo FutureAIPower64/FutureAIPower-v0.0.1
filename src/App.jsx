@@ -15,7 +15,7 @@ import { useSelector } from "react-redux";
 function App() {
   const mode = useSelector(state=> state.counter.mode);
   return (
-    <div data-mode={mode} className='dark:bg-black'>
+    <div data-mode={mode} className='dark:bg-black h-[500vh]'>
       <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/AI-Tools" element={ <AI_Tools/> } />

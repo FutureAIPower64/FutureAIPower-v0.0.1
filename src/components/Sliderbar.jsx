@@ -14,8 +14,8 @@ function Sliderbar() {
     }
     return (
         <>
-            <div class="dark:text-white dark:bg-dark-black text-black p-4  border h-[100vh] ps-5">
-                <h2 class="font-bold mb-4">Category</h2>
+            <div class="dark:text-white dark:bg-dark-black text-black px-4 py-10  border-e-1 dark:border-card-border h-[110vh] ps-5 fixed w-2/12">
+                <h2 class="font-bold mb-4 text-lg">Category</h2>
                 <ul class="space-y-2">
                     <li onClick={() => getcatdata("Photo Editor")} className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1 rounded-lg hover:text-white'><a href="#" >Photo Editing</a></li>
                     <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Video Editing</a></li>
@@ -48,7 +48,7 @@ function Sliderbar() {
                     </li>
                 </ul>
 
-                <h2 class="font-bold mt-8 mb-4">Collection</h2>
+                <h2 class="font-bold mt-8 mb-4  text-lg">Collection</h2>
                 <ul class="space-y-2">
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">Best Tools</a></li>
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">New Tools</a></li>
@@ -56,16 +56,13 @@ function Sliderbar() {
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">Featured Tools</a></li>
                 </ul>
 
-                <h2 class="font-bold mt-8 mb-4">AI News</h2>
+                <h2 class="font-bold mt-8 mb-4  text-lg">AI News</h2>
                 <ul class="space-y-2">
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">Latest News</a></li>
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">Top News</a></li>
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">Most Popular News</a></li>
                     <li className="py-1 px-3 hover:bg-hover-blue rounded-lg dark:hover:bg-gray-700 hover:text-white"><a href="#">Featured News</a></li>
                 </ul>
-            </div>
-            <div className='w-3/12'>
-            
             </div>
         </>
 

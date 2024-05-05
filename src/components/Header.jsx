@@ -14,8 +14,8 @@ const Header = () => {
     };
 
     return (
-        <div>
-            <header className="dark:bg-dark-black border-b-1 dark:border-main-border text-white duration-300 bg-blue-950 bg-opacity-95">
+        <div className="fixed top-0 left-0 right-0 z-50">
+            <header className="dark:bg-dark-black border-b-1 dark:border-card-border text-white duration-300 bg-blue-950 bg-opacity-95">
                 <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
                     <div className="flex items-center">
                         <Link to="/" className="text-xl font-bold">

@@ -1,17 +1,28 @@
-import React from 'react'
-import Header from './Header'
-import Box from './Box'
-import Cards from './Cards'
+import React from "react";
+import Header from "./Header";
+import Box from "./Box";
+import Cards from "./Cards";
+import Sliderbar from "./Sliderbar";
+import News from "./News";
 
 function Home() {
   return (
-    <div >
+    <div>
       <Header />
-      <Cards></Cards>
       <Box />
-
+      <div className="mt-14">
+        <div className="flex">
+          <div className="w-2/12">
+            <Sliderbar></Sliderbar>
+          </div>
+          <div className="w-10/12">
+            <Cards></Cards>
+            <News></News>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
