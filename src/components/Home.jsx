@@ -19,6 +19,7 @@ function Home() {
           <div className='w-10/12'>
             <TopCardmenu></TopCardmenu>
             <Cards></Cards>
+            <Cards></Cards>
             <News></News>
             <Cards></Cards>
             <Cards></Cards>
