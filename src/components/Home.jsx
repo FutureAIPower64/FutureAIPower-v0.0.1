@@ -17,6 +17,7 @@ function Home() {
           </div>
           <div className='w-10/12'>
             <Cards></Cards>
+            <Cards></Cards>
             <News></News>
             <Cards></Cards>
             <Cards></Cards>

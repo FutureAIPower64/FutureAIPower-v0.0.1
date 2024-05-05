@@ -14,9 +14,9 @@ function Sliderbar() {
     }
     return (
         <>
-            <div class="dark:text-white dark:bg-dark-black text-black px-4 py-10  border-e-1 dark:border-card-border h-[110vh] ps-5 fixed w-2/12">
-                <h2 class="font-bold mb-4 text-lg">Category</h2>
-                <ul class="space-y-2">
+            <div className=" dark:text-white dark:bg-dark-black text-black px-4 py-10  border-e-1 dark:border-card-border h-[110vh] ps-5 fixed w-2/12">
+                <h2 className="font-bold mb-4 text-lg">Category</h2>
+                <ul className="space-y-2">
                     <li onClick={() => getcatdata("Photo Editor")} className='hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1 rounded-lg hover:text-white'><a href="#" >Photo Editing</a></li>
                     <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Video Editing</a></li>
                     <li onClick={() => getcatdata("Text to Speech")} className='hover:bg-hover-blue px-3 py-1  dark:hover:bg-gray-700 rounded-lg hover:text-white'><a href="#">Text To Speech</a></li>
