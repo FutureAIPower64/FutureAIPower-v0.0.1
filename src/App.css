@@ -39,3 +39,6 @@
     color: white !important;
     background-color: black !important;
 }
+.sliderBar::-webkit-scrollbar {
+    width: 2px;
+}
