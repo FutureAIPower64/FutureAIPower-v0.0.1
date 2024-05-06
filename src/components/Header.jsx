@@ -5,6 +5,8 @@ import tool from "../assets/tool.jpeg";
 import ToggleSwitch from "./ToggleSwitch";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
+import { MdKeyboardCommandKey } from "react-icons/md";
+
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +46,15 @@ const Header = () => {
                     </div>
                     <div className="hidden lg:flex items-center">
                         <div className="relative lg:block hidden">
-                            <input type="text" className="dark:bg-gray-700 text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-gray-200" placeholder="Search your tools..." />
+                            <div>
+                                <input type="text" className="dark:bg-gray-700 text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-gray-200" placeholder="Search your tools..." />
+                            </div>
+                            <div className="absolute right-1 top-1 text-gray-400">
+                                <div className="flex items-center border-1 px-1 bg-slate-300 text-black rounded">
+                                    <MdKeyboardCommandKey />
+                                    <span>k</span>
+                                </div>
+                            </div>
                         </div>
                         <div className="ml-4 lg:block hidden ">
                             <img src={tool} alt="User Logo" className="h-8 w-8 rounded-full" />

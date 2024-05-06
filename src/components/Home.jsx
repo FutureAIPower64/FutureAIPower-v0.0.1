@@ -15,7 +15,7 @@ function Home() {
           <div className='hidden lg:block lg:w-2/12'>
             <Sliderbar></Sliderbar>
           </div>
-          <div className='w-full lg:w-10/12'>
+          <div className='w-full lg:w-10/12 reletive'>
             <Cards></Cards>
             <Cards></Cards>
             <News></News>
