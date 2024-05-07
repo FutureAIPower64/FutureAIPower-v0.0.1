@@ -10,12 +10,13 @@ function Home() {
     <div>
       <Header />
       <Box />
-      <div className="mt-14">
-        <div className="flex">
-          <div className="w-2/12">
+      <div className='mt-14'>
+        <div className='flex'>
+          <div className='hidden lg:block lg:w-2/12'>
             <Sliderbar></Sliderbar>
           </div>
-          <div className="w-10/12">
+          <div className='w-full lg:w-10/12 reletive'>
+            <Cards></Cards>
             <Cards></Cards>
             <News></News>
           </div>

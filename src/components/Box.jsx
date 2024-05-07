@@ -21,7 +21,7 @@ function Box() {
     }
     
   return (
-    <div style={{height:'100vh ',backgroundColor:"rgba(0,0,0,0.7)",visibility:toggle}} className='flex justify-center items-center absolute top-0 left-0 w-full z-50'>
+    <div style={{height:'100vh ',backgroundColor:"rgba(0,0,0,0.7)",visibility:toggle}} className='flex justify-center items-center fixed  top-0 left-0 w-full z-50'>
       <div className='box p-2 h-box rounded-md sm-w-full bg-white dark:bg-dark-black dark:text-white md:w-2/5 mx-auto overflow-hidden text-md'>
         <div className='flex justify-between items-center pt-1 pb-2 border-b-2'>
             <i className='text-xl px-2'><CiSearch /></i>
