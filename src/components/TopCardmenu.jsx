@@ -12,6 +12,7 @@ function TopCardmenu() {
 
   return (
     <div className='mx-10'>
+      {/* --------------------------off canvas ------------------------------------------ */}
       <div className={`fixed lg:hidden snap-y inset-0 z-50 bg-white dark:bg-dark-black transition-all py-0 duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
         <div className='flex justify-between items-center mt-5 p-2 '>
           <img src={logo} className=" w-16" />
@@ -23,10 +24,12 @@ function TopCardmenu() {
           <Sliderbar></Sliderbar>
         </div>
       </div>
+      {/* --------------------------off canvas end ------------------------------------------ */}
+
       <div className="hidden xl:block text-sm mt-10 text-white">
         <div className="container mx-auto px-0 ">
-          <div className="flex justify-between items-center dark:text-white">
-            <ul className="flex bg-white px-1 py-3 rounded-md font-semibold dark:bg-dark-grey ring-1 ring-gray-300">
+          <div className="flex justify-between items-center  dark:text-white">
+            <ul className="flex bg-white px-1 py-3 rounded-md font-semibold dark:bg-dark-grey ring-1 ring-gray-300 dark:ring-dark-grey">
               <li>
                 <a
                   href="#"
@@ -94,7 +97,7 @@ function TopCardmenu() {
             </ul>
             <ul>
            
-                <li className="bg-blue-950 text-white hover:bg-slate-200 hover:text-black px-3 py-2 rounded dark:bg-white dark:text-black duration-300 font-semibold transition dark:hover:bg-dark-grey dark:">
+                <li className="bg-blue-950 text-white hover:bg-slate-200 hover:text-black px-3 py-2 rounded dark:hover:text-white dark:bg-white dark:text-black duration-300 font-semibold transition dark:hover:bg-dark-grey dark:">
                   <a href="#">More +</a>
                 </li>
 

@@ -25,36 +25,36 @@ const Header = () => {
                             <img src={logo} className=" w-16"></img>
                         </Link>
                     </div>
-                    <div className="hidden lg:flex md:items-center md:space-x-4 text-zinc-400  font-semibold">
+                    <div className="hidden lg:flex md:items-center md:space-x-4 text-zinc-400   font-semibold">
                         <Link to="/" className="text-xl font-bold">
                             <img src={logo} className=" w-16"></img>
                         </Link>
-                        <Link to="/AI-Tools" className="hover:text-black px-3">
+                        <Link to="/AI-Tools" className="hover:text-black px-3 dark:hover:text-white duration-300">
                             AI Tools
                         </Link>
-                        <Link to="/AI-News" className="hover:text-black px-3">
+                        <Link to="/AI-News" className="hover:text-black px-3 dark:hover:text-white duration-300">
                             AI News
                         </Link>
-                        <Link to="/Blog" className="hover:text-black px-3">
+                        <Link to="/Blog" className="hover:text-black px-3 dark:hover:text-white duration-300">
                             Blog
                         </Link>
-                        <Link to="/Contact" className="hover:text-black px-3">
+                        <Link to="/Contact" className="hover:text-black px-3 dark:hover:text-white duration-300">
                             Contact Us
                         </Link>
-                        <Link to="/Favourites" className="hover:text-black px-3">
+                        <Link to="/Favourites" className="hover:text-black px- dark:hover:text-white duration-3003">
                             Favourites
                         </Link>
-                        <Link to="/About" className="hover:text-black px-3">
+                        <Link to="/About" className="hover:text-black px-3 dark:hover:text-white duration-300">
                             About Us
                         </Link>
                     </div>
                     <div className="hidden lg:flex items-center">
                         <div className="relative lg:block hidden">
                             <div>
-                                <input type="text" className=" bg-white hover:bg-light-gray dark:hover:bg-dark-black  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-gray-300 " placeholder="Search your tools..." />
+                                <input type="text" className=" bg-white hover:bg-light-gray dark:hover:bg-dark-black  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 dark:ring-dark-grey ring-gray-300 " placeholder="Search your tools..." />
                             </div>
                             <div className="absolute right-1 top-1 text-gray-400 ">
-                                <div className="flex items-center  px-2 bg-light-gray  ring-1 ring-gray-300 rounded text-zinc-400  ">
+                                <div className="flex items-center  dark:bg-dark-grey dark:ring-dark-grey px-2 bg-light-gray  ring-1 ring-gray-300 rounded text-zinc-400  ">
                                     <MdKeyboardCommandKey />
                                     <span>k</span>
                                 </div>
