@@ -16,6 +16,8 @@ export default {
         "main-border":"#27272a",
         "card-color":" #020817",
         "card-border":"#353e4b",
+        "light-gray":"#f4f4f5",
+      
 
         // --------new color--------
         // "dark-black": '#828283',
