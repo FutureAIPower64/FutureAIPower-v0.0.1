@@ -4,6 +4,7 @@ import Box from "./Box";
 import Cards from "./Cards";
 import Sliderbar from "./Sliderbar";
 import News from "./News";
+import TopCardmenu from "./TopCardmenu";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
             <Sliderbar></Sliderbar>
           </div>
           <div className='w-full lg:w-10/12 reletive'>
+            <TopCardmenu></TopCardmenu>
             <Cards></Cards>
             <Cards></Cards>
             <News></News>
