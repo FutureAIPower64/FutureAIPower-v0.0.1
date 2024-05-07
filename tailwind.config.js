@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        "dark-black": '#09090b',
+        "dark-black": '#09090B',
+        "dark-grey": '#27272A',
         "hover-black": '#27272A',
         "hover-grey": '#F4F4F5',
         "hover-blue": 'rgba(23, 37, 84, 0.7)',
@@ -20,6 +21,8 @@ export default {
         // "dark-black": '#828283',
         "dark-grey":"#27272A",
         // "graycolor-black":"#828283",
+        "dark-text-gray":"#9D9DA5",
+        "dark-bg-btn":"#FAFAFA",
       },
       height: {
         "box":"348px",
@@ -44,6 +47,9 @@ export default {
     },
     borderWidth: {
       '1': '1px',
+    },
+    borderRadius: {
+      '10': '6px',
     }
   },
   plugins: [],

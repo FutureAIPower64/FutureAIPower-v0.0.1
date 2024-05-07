@@ -28,10 +28,10 @@ function Cards() {
                 <OwlCarousel className='owl-theme AI_Tools' id='light' autoplay={true} autoplayTimeout={5000} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 },1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-lg px-4 py-3  dark:bg-card-color dark:text-white w-full bg-slate-100  border-1  dark:border-card-border '>
+                            <div className='rounded-10 px-4 py-3  hover:dark:bg-dark-grey dark:bg-dark-black dark:text-white w-full bg-slate-100  border-1  dark:border-card-border '>
                                 <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
-                                        <div className='w-10 h-10 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
+                                        <div className='w-10 h-10 rounded-10 me-3 dark:border-slate-50 border-1 border-dark-black'>
                                             <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
                                         </div>
                                         <div className='font-semibold'>
@@ -49,7 +49,7 @@ function Cards() {
                                         <FiBookmark></FiBookmark>
                                     </div>
                                 </div>
-                                <div className='my-4 text-xs h-10 text-gray-500'>
+                                <div className='my-4 text-xs h-10 text-dark-text-gray'>
                                     {card.description}
                                 </div>
                                 <div className='mb-6 text-xs h-7'>
@@ -57,8 +57,8 @@ function Cards() {
                                 </div>
                                 <div className='flex justify-between my-4' >
                                     <p className='text-md font-semibold text-sm'>{card.buttonText}</p>
-                                    <div className='flex items-center px-1 rounded dark:bg-blue-600 dark:border-card-color border-1 border-dark-black'>
-                                        <p className='text-md me-2 text-sm'>Visit</p>
+                                    <div className='flex items-center p-1 px-2 rounded-10 text-dark-black dark:bg-dark-bg-btn dark:border-card-color border-1 border-dark-black'>
+                                        <p className='text-md me-1 text-xs'>Visit</p>
                                         <HiExternalLink ></HiExternalLink>
                                     </div>
                                 </div>
