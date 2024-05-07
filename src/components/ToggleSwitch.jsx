@@ -7,6 +7,7 @@ import { changeMode } from '../store/counter/counterSlice';
 function ToggleSwitch() {
     const mode = useSelector((state) => state.counter.mode);
     const dispatch = useDispatch();
+    var i =1;
 
     const setMode = (ele) => {
         localStorage.setItem('mode', ele);
