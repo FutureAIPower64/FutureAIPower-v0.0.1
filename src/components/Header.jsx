@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         // <div >
-        <div className=" xl:px-3 fixed top-0 left-0 right-0 z-50  bg-blue-950 dark:bg-dark-black border-b-1 dark:border-dark-grey">
+        <div className=" xl:px-3 fixed top-0 left-0 right-0 z-50  bg-white dark:bg-dark-black border-b-1 dark:border-dark-grey">
             <header className="  text-white duration-300 ">
                 <nav className=" mx-auto px-4 py-2 flex items-center justify-between">
                     <div className="flex items-center  lg:hidden">
@@ -29,32 +29,32 @@ const Header = () => {
                         <Link to="/" className="text-xl font-bold">
                             <img src={logo} className=" w-16"></img>
                         </Link>
-                        <Link to="/AI-Tools" className="hover:text-gray-300 px-3">
+                        <Link to="/AI-Tools" className="hover:text-black px-3">
                             AI Tools
                         </Link>
-                        <Link to="/AI-News" className="hover:text-gray-300 px-3">
+                        <Link to="/AI-News" className="hover:text-black px-3">
                             AI News
                         </Link>
-                        <Link to="/Blog" className="hover:text-gray-300 px-3">
+                        <Link to="/Blog" className="hover:text-black px-3">
                             Blog
                         </Link>
-                        <Link to="/Contact" className="hover:text-gray-300 px-3">
+                        <Link to="/Contact" className="hover:text-black px-3">
                             Contact Us
                         </Link>
-                        <Link to="/Favourites" className="hover:text-gray-300 px-3">
+                        <Link to="/Favourites" className="hover:text-black px-3">
                             Favourites
                         </Link>
-                        <Link to="/About" className="hover:text-gray-300 px-3">
+                        <Link to="/About" className="hover:text-black px-3">
                             About Us
                         </Link>
                     </div>
                     <div className="hidden lg:flex items-center">
                         <div className="relative lg:block hidden">
                             <div>
-                                <input type="text" className=" bg-card-color  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-dark-grey " placeholder="Search your tools..." />
+                                <input type="text" className=" bg-white hover:bg-light-gray dark:hover:bg-dark-black  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-gray-300 " placeholder="Search your tools..." />
                             </div>
                             <div className="absolute right-1 top-1 text-gray-400 ">
-                                <div className="flex items-center  px-2 bg-dark-grey   rounded text-zinc-400  ">
+                                <div className="flex items-center  px-2 bg-light-gray  ring-1 ring-gray-300 rounded text-zinc-400  ">
                                     <MdKeyboardCommandKey />
                                     <span>k</span>
                                 </div>
@@ -70,7 +70,7 @@ const Header = () => {
                     <div className="lg:hidden flex ">
                         <ToggleSwitch />
                         <button type="button" className="text-gray-300 hover:text-white focus:outline-none" onClick={toggleMenu} >
-                            <HiBars3CenterLeft className="h-6 w-6 fill-current rotate-180 text-white" />
+                            <HiBars3CenterLeft className="h-6 w-6 fill-current rotate-180 text-black dark:text-white" />
                         </button>
                     </div>
                 </nav>
@@ -93,12 +93,12 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="mt-8 space-y-4">
-                            <Link to="/AI-Tools" className="block text-gray-700 hover:text-white"> AI Tools </Link>
-                            <Link to="/AI-News" className="block text-gray-700 hover:text-white"> AI News </Link>
-                            <Link to="/Blog" className="block text-gray-700 hover:text-white"> Blog </Link>
-                            <Link to="/Contact" className="block text-gray-700 hover:text-white"> Contact Us </Link>
-                            <Link to="/Favourites" className="block text-gray-700 hover:text-white"> Favourites </Link>
-                            <Link to="/About" className="block text-gray-700 hover:text-white "> About Us </Link>
+                            <Link to="/AI-Tools" className="block text-gray-700 hover:text-white hover:bg-light-gray p-2 rounded-md"> AI Tools </Link>
+                            <Link to="/AI-News" className="block text-gray-700 hover:text-white hover:bg-light-gray p-2 rounded-md"> AI News </Link>
+                            <Link to="/Blog" className="block text-gray-700 hover:text-white hover:bg-light-gray p-2 rounded-md"> Blog </Link>
+                            <Link to="/Contact" className="block text-gray-700 hover:text-white hover:bg-light-gray p-2 rounded-md"> Contact Us </Link>
+                            <Link to="/Favourites" className="block text-gray-700 hover:text-white hover:bg-light-gray p-2 rounded-md"> Favourites </Link>
+                            <Link to="/About" className="block text-gray-700 hover:text-white hover:bg-light-gray p-2 rounded-md "> About Us </Link>
                         </div>
                     </div>
                 </div>
