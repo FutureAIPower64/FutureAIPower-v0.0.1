@@ -27,11 +27,11 @@ function Cards() {
                 <OwlCarousel className='owl-theme AI_Tools' id='light' nav={false} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 }, 1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-10 px-4 py-3  hover:dark:bg-dark-grey dark:bg-dark-black dark:text-white w-full bg-slate-100  border-1  dark:border-card-border '>
+                            <div className='rounded-md px-4 py-3  hover:dark:bg-dark-grey dark:bg-dark-black dark:text-white w-full bg-slate-100  border-1  dark:border-card-border '>
 
                                 <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
-                                        <div className='w-10 h-10 rounded-10 me-3 dark:border-slate-50 border-1 border-dark-black'>
+                                        <div className='w-10 h-10 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
                                             <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
                                         </div>
                                         <div className='font-semibold'>
@@ -57,18 +57,17 @@ function Cards() {
                                 </div>
                                 <div className='flex justify-between my-4' >
                                     <p className='text-md font-semibold text-sm'>{card.buttonText}</p>
-                                    <div className='flex items-center p-1 px-2 rounded-10 text-dark-black dark:bg-dark-bg-btn dark:border-card-color border-1 border-dark-black'>
-                                        <p className='text-md me-1 text-xs'>Visit</p>
-                                        <buttton className='flex items-center px-1 rounded cursor-pointer dark:bg-blue-500 dark:text-black dark:font-semibold bg-blue-200 hover:bg-blue-600 hover:text-white duration-300 dark:border-card-color border-1 border-cyan-600'>
+                                    <div className='flex items-center  rounded-md text-dark-black dark:bg-dark-bg-btn dark:border-card-color border-1 border-dark-black'>
+                                        <buttton className='flex items-center px-1 rounded cursor-pointer dark:text-black dark:font-semibold  duration-300  border-1'>
                                             <p className='text-sm me-2 '>Visit</p>
                                             <HiExternalLink ></HiExternalLink>
                                         </buttton>
                                     </div>
                                 </div>
-                                </div>
-                                ))
+                            </div>
+                        ))
                     }
-                    </OwlCarousel>
+                </OwlCarousel>
             </div>
         </>
     )

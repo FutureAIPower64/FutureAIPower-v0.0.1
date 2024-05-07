@@ -24,7 +24,7 @@ function Sliderbar() {
                     <li onClick={() => getcatdata("Logo Generator")} className='hover:bg-hover-blue px-3 py-1  hover:dark:bg-dark-grey rounded-md hover:text-white'><a href="#">Logo Generator</a></li>
                     <li>
                         {/* <button className=" w-[90%] mx-auto xl:w-full flex items-center justify-between   hover:bg-hover-blue hover:dark:bg-dark-grey px-3 py-1 mb-1 hover:text-white  rounded-10" onClick={toggleAccordion} > */}
-                        <button className=" w-[90%] mx-auto xl:w-full flex items-center justify-between   hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1 mb-1 hover:text-white rounded-lg" onClick={toggleAccordion} >
+                        <button className=" w-[90%] mx-auto xl:w-full flex items-center justify-between   hover:bg-hover-blue hover:dark:bg-dark-grey dark:hover:bg-gray-700 px-3 py-1 mb-1 hover:text-white rounded-lg" onClick={toggleAccordion} >
                             More
                             <span className={`transform transition duration-300 inline-block ml-2 ${isOpen ? 'rotate-180' : ''}`} >
                                 <div className='p-1 dark:text-white'>
