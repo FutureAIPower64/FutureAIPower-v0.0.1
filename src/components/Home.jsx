@@ -11,7 +11,7 @@ function Home() {
     <div >
       <Header />
       <Box />
-      <div className='mt-14'>
+      <div className='mt-10'>
         <div className='flex'>
           <div className='hidden lg:block lg:w-2/12'>
             <Sliderbar></Sliderbar>

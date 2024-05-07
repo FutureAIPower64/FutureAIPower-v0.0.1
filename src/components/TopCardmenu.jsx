@@ -95,7 +95,7 @@ function TopCardmenu() {
               </li>
             </ul>
             <ul>
-              <li className="bg-blue-950 text-white hover:bg-slate-200 hover:text-black px-3 py-2 rounded dark:bg-white  font-semibold transition duration-200 dark:hover:bg-blue-600 dark:hover:text-white">
+              <li className="bg-blue-950 dark:text-black  hover:bg-slate-200 hover:text-black px-3 py-2 rounded dark:bg-white  font-semibold transition duration-200 dark:hover:bg-blue-600 dark:hover:text-white">
                 <a href="#">More +</a>
 
               </li>
@@ -104,7 +104,7 @@ function TopCardmenu() {
           </div>
         </div>
       </div>
-      <button type="button" className="mt-10 block lg:hidden bg-slate-200 hover:bg-gray-700 hover:text-white px-3 py-2 rounded dark:bg-white text-black font-semibold transition duration-200 dark:hover:bg-blue-600 dark:hover:text-white" onClick={toggleMenu} >
+      <button type="button" className="text-balance mt-10 block lg:hidden bg-slate-200 hover:bg-gray-700 hover:text-white px-3 py-2 rounded dark:bg-white text-black font-semibold transition duration-200 dark:hover:bg-blue-600 dark:hover:text-white" onClick={toggleMenu} >
         More +
       </button>
     </div>

@@ -16,15 +16,19 @@ const Header = () => {
     };
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50">
-            <header className="dark:bg-dark-black border-b-1 dark:border-card-border text-white duration-300 bg-blue-950 ">
-                <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
-                    <div className="flex items-center">
+        // <div >
+        <div className=" xl:px-3 fixed top-0 left-0 right-0 z-50  bg-blue-950 dark:bg-dark-black border-b-1 dark:border-dark-grey">
+            <header className="  text-white duration-300 ">
+                <nav className=" mx-auto px-4 py-2 flex items-center justify-between">
+                    <div className="flex items-center  lg:hidden">
                         <Link to="/" className="text-xl font-bold">
                             <img src={logo} className=" w-16"></img>
                         </Link>
                     </div>
-                    <div className="hidden lg:flex md:items-center md:space-x-4">
+                    <div className="hidden lg:flex md:items-center md:space-x-4 text-zinc-400  font-semibold">
+                        <Link to="/" className="text-xl font-bold">
+                            <img src={logo} className=" w-16"></img>
+                        </Link>
                         <Link to="/AI-Tools" className="hover:text-gray-300 px-3">
                             AI Tools
                         </Link>
@@ -47,23 +51,23 @@ const Header = () => {
                     <div className="hidden lg:flex items-center">
                         <div className="relative lg:block hidden">
                             <div>
-                                <input type="text" className="dark:bg-gray-700 text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-gray-200" placeholder="Search your tools..." />
+                                <input type="text" className=" bg-card-color  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 ring-dark-grey " placeholder="Search your tools..." />
                             </div>
-                            <div className="absolute right-1 top-1 text-gray-400">
-                                <div className="flex items-center border-1 px-1 bg-slate-300 text-black rounded">
+                            <div className="absolute right-1 top-1 text-gray-400 ">
+                                <div className="flex items-center  px-2 bg-dark-grey   rounded text-zinc-400  ">
                                     <MdKeyboardCommandKey />
                                     <span>k</span>
                                 </div>
                             </div>
                         </div>
-                        <div className="ml-4 lg:block hidden ">
+                        <div className=" lg:block hidden ms-6 me-2">
                             <img src={tool} alt="User Logo" className="h-8 w-8 rounded-full" />
                         </div>
-                        <div className="ml-4">
+                        <div className="">
                             <ToggleSwitch />
                         </div>
                     </div>
-                    <div className="lg:hidden flex gap-3">
+                    <div className="lg:hidden flex ">
                         <ToggleSwitch />
                         <button type="button" className="text-gray-300 hover:text-white focus:outline-none" onClick={toggleMenu} >
                             <HiBars3CenterLeft className="h-6 w-6 fill-current rotate-180 text-white" />
@@ -100,6 +104,7 @@ const Header = () => {
                 </div>
             </header>
         </div>
+        // </div>
 
     );
 };

@@ -15,6 +15,11 @@ export default {
         "main-border":"#27272a",
         "card-color":" #020817",
         "card-border":"#353e4b",
+
+        // --------new color--------
+        // "dark-black": '#828283',
+        "dark-grey":"#27272A",
+        // "graycolor-black":"#828283",
       },
       height: {
         "box":"348px",
@@ -25,7 +30,7 @@ export default {
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
-        lg: '4rem',
+        lg: '3rem',
         xl: '5rem',
         '2xl': '6rem',
       },
@@ -35,7 +40,7 @@ export default {
       'md': '768px', 
       'lg': '1024px', 
       'xl': '1280px', 
-      '2xl': '1536px', 
+      // '2xl': '1440px' 
     },
     borderWidth: {
       '1': '1px',
