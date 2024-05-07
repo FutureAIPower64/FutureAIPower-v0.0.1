@@ -18,12 +18,13 @@ function Sliderbar() {
             <div className="h-screen fixed sliderBar w-full lg:w-2/12  overflow-scroll dark:text-white dark:bg-dark-black text-black xl:px-4 py-10  border-e-1 dark:border-card-border xl:ps-6 ">
                 <h2 className="font-bold mb-4 text-lg ps-3 xl:ps-0 ">Category</h2>
                 <ul className="space-y-2">
-                    <li onClick={() => getcatdata("Photo Editor")} className='hover:bg-hover-blue hover:dark:bg-dark-grey px-3 py-1 rounded-10 hover:text-white'><a href="#" >Photo Editing</a></li>
-                    <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  hover:dark:bg-dark-grey rounded-10 hover:text-white'><a href="#">Video Editing</a></li>
-                    <li onClick={() => getcatdata("Text to Speech")} className='hover:bg-hover-blue px-3 py-1 hover:dark:bg-dark-grey rounded-10 hover:text-white'><a href="#">Text To Speech</a></li>
-                    <li onClick={() => getcatdata("Logo Generator")} className='hover:bg-hover-blue px-3 py-1  hover:dark:bg-dark-grey rounded-10 hover:text-white'><a href="#">Logo Generator</a></li>
+                    <li onClick={() => getcatdata("Photo Editor")} className='hover:bg-hover-blue hover:dark:bg-dark-grey px-3 py-1 rounded-md hover:text-white'><a href="#" >Photo Editing</a></li>
+                    <li onClick={() => getcatdata("Video Editor")} className='hover:bg-hover-blue px-3 py-1  hover:dark:bg-dark-grey rounded-md hover:text-white'><a href="#">Video Editing</a></li>
+                    <li onClick={() => getcatdata("Text to Speech")} className='hover:bg-hover-blue px-3 py-1 hover:dark:bg-dark-grey rounded-md hover:text-white'><a href="#">Text To Speech</a></li>
+                    <li onClick={() => getcatdata("Logo Generator")} className='hover:bg-hover-blue px-3 py-1  hover:dark:bg-dark-grey rounded-md hover:text-white'><a href="#">Logo Generator</a></li>
                     <li>
-                        <button className=" w-[90%] mx-auto xl:w-full flex items-center justify-between   hover:bg-hover-blue hover:dark:bg-dark-grey px-3 py-1 mb-1 hover:text-white  rounded-10" onClick={toggleAccordion} >
+                        {/* <button className=" w-[90%] mx-auto xl:w-full flex items-center justify-between   hover:bg-hover-blue hover:dark:bg-dark-grey px-3 py-1 mb-1 hover:text-white  rounded-10" onClick={toggleAccordion} > */}
+                        <button className=" w-[90%] mx-auto xl:w-full flex items-center justify-between   hover:bg-hover-blue dark:hover:bg-gray-700 px-3 py-1 mb-1 hover:text-white rounded-lg" onClick={toggleAccordion} >
                             More
                             <span className={`transform transition duration-300 inline-block ml-2 ${isOpen ? 'rotate-180' : ''}`} >
                                 <div className='p-1 dark:text-white'>
@@ -51,18 +52,18 @@ function Sliderbar() {
 
                 <h2 class="font-bold mt-8 mb-4  text-lg  ps-3 xl:ps-0">Collection</h2>
                 <ul class="space-y-2">
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey  hover:text-white"><a href="#">Best Tools</a></li>
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey  hover:text-white"><a href="#">New Tools</a></li>
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey  hover:text-white"><a href="#">Most Popular Tools</a></li>
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey  hover:text-white"><a href="#">Featured Tools</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey  hover:text-white"><a href="#">Best Tools</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey  hover:text-white"><a href="#">New Tools</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey  hover:text-white"><a href="#">Most Popular Tools</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey  hover:text-white"><a href="#">Featured Tools</a></li>
                 </ul>
 
                 <h2 class="font-bold mt-8 mb-4  text-lg  ps-3 xl:ps-0">AI News</h2>
                 <ul class="space-y-2">
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey hover:text-white"><a href="#">Latest News</a></li>
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey hover:text-white"><a href="#">Top News</a></li>
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey hover:text-white"><a href="#">Most Popular News</a></li>
-                    <li className="py-1 px-3 hover:bg-hover-blue rounded-10 hover:dark:bg-dark-grey hover:text-white"><a href="#">Featured News</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey hover:text-white"><a href="#">Latest News</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey hover:text-white"><a href="#">Top News</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey hover:text-white"><a href="#">Most Popular News</a></li>
+                    <li className="py-1 px-3 hover:bg-hover-blue rounded-md hover:dark:bg-dark-grey hover:text-white"><a href="#">Featured News</a></li>
                 </ul>
             </div>
         </>

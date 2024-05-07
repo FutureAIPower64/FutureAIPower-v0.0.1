@@ -1,14 +1,14 @@
-import React from 'react'
-import Header from './Header'
-import Box from './Box'
-import Cards from './Cards'
-import Sliderbar from './Sliderbar'
-import TopCardmenu from './TopCardmenu'
-import News from './News'
+import React from "react";
+import Header from "./Header";
+import Box from "./Box";
+import Cards from "./Cards";
+import Sliderbar from "./Sliderbar";
+import News from "./News";
+import TopCardmenu from "./TopCardmenu";
 
 function Home() {
   return (
-    <div >
+    <div>
       <Header />
       <Box />
       <div className='mt-10'>
@@ -26,10 +26,9 @@ function Home() {
             <Cards></Cards>
           </div>
         </div>
-
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

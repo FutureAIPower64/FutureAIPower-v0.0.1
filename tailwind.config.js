@@ -48,9 +48,9 @@ export default {
     borderWidth: {
       '1': '1px',
     },
-    borderRadius: {
-      '10': '6px',
-    }
+    // borderRadius: {
+    //   '10': '6px',
+    // }
   },
   plugins: [],
 }

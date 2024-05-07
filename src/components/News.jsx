@@ -56,17 +56,21 @@ function News() {
                 {newsData &&
                     newsData.map((ele, ind) => {
                         return (
-                            <div key={ind} className='hover:dark:bg-dark-grey dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 text-black p-3 rounded-md border-1 rounded-10'>
-                                <img src={ele.img} className='w-full rounded-10 h-[160px] border-1 dark:border-card-border' alt="" />
+                            <div key={ind} className='hover:dark:bg-dark-grey dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 text-black p-3 rounded-md border-1 '>
+                                <img src={ele.img} className='w-full rounded-md h-[160px] border-1 dark:border-card-border' alt="" />
                                 <div className='p-3'>
                                     <p className='text-sm font-semibold dark:text-white pb-2'>{ele.date}</p>
                                     <p className='h-12 text-md'>{ele.desc}</p>
                                     <button className='flex items-top gap-0 text-sm mt-4'>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
+                                    <button className='flex items-top gap-0 text-sm mt-4 '>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
                                 </div>
                             </div>
                         )
                     })}
             </OwlCarousel>
+            <div className="flex justify-center md:justify-end mt-14 md:mt-4">
+                <button className='py-2 px-5 border-1 dark:bg-white dark:text-black font-semibold dark:border-main-border border-blue-400 text-white bg-blue-600 rounded-md'>Read All News</button>
+            </div>
         </div>
     )
 }
