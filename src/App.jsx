@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import 'animate.css';
 import React, { useEffect } from "react";
 
 import { Routes, Route } from "react-router-dom"

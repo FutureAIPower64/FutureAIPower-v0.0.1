@@ -20,7 +20,7 @@ function TopCardmenu() {
             <RxCross2 />
           </button>
         </div>
-        <div className="pb-10">
+        <div className="pb-10 w-12">
           <Sliderbar></Sliderbar>
         </div>
       </div>

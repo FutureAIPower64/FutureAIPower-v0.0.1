@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         // <div >
-        <div className=" xl:px-3 fixed top-0 left-0 right-0 z-50  bg-white dark:bg-dark-black border-b-1 dark:border-dark-grey">
+        <div className=" xl:px-20 fixed top-0 left-0 right-0 z-50  bg-white dark:bg-dark-black border-b-1 dark:border-dark-grey">
             <header className="  text-white duration-300 ">
                 <nav className=" mx-auto px-4 py-2 flex items-center justify-between">
                     <div className="flex items-center  lg:hidden">
@@ -60,11 +60,12 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=" lg:block hidden ms-6 me-2">
-                            <img src={tool} alt="User Logo" className="h-8 w-8 rounded-full" />
-                        </div>
-                        <div className="">
+
+                        <div className="ms-3 me-2">
                             <ToggleSwitch />
+                        </div>
+                        <div className=" lg:block hidden ">
+                            <img src={tool} alt="User Logo" className="h-8 w-8 rounded-full" />
                         </div>
                     </div>
                     <div className="lg:hidden flex ">
@@ -77,7 +78,7 @@ const Header = () => {
 
                 {/* Offcanvas Menu --------------------------------------------------- */}
                 <div className={`dark:border-2 dark:border-white lg:hidden fixed inset-0 z-10 transition-all duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`} >
-                    <div className="dark:bg-black bg-opacity-50 inset-0 fixed transition-opacity duration-300" onClick={toggleMenu} ></div>
+                    <div className=" bg-opacity-50 inset-0 fixed transition-opacity duration-300" onClick={toggleMenu} ></div>
                     <div className={`dark:bg-black  bg-white text-black dark:text-white w-64 h-full p-4 fixed right-0 transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
                         <div className="flex justify-between my-2 ">
                             <div className="">

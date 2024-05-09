@@ -22,7 +22,7 @@ function Cards() {
     }, [mode])
     return (
         <>
-            <div className='pt-10 px-10'>
+            <div className='pt-10 px-10 '>
                 <BlogHead head={'Top AI Tools'} desc={'Read AI Related Tools. Updated daily.'} ></BlogHead>
                 <OwlCarousel className='owl-theme AI_Tools' id='light' nav={false} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 }, 1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
