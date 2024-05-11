@@ -33,7 +33,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Photo Editing
                 </a>
@@ -41,7 +41,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Video Editing
                 </a>
@@ -49,7 +49,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Text To Speech
                 </a>
@@ -57,7 +57,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Logo Generator
                 </a>
@@ -65,7 +65,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Marketing
                 </a>
@@ -73,7 +73,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Productivity
                 </a>
@@ -81,7 +81,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   SEO
                 </a>
@@ -89,7 +89,7 @@ function TopCardmenu() {
               <li>
                 <a
                   href="#"
-                  className="text-black dark:text-white  px-5 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
+                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
                   Finance
                 </a>
