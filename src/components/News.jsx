@@ -62,7 +62,6 @@ function News() {
                                     <p className='text-sm font-semibold dark:text-white pb-2'>{ele.date}</p>
                                     <p className='h-12 text-md'>{ele.desc}</p>
                                     <button className='flex items-top gap-0 text-sm mt-4'>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
-                                    <button className='flex items-top gap-0 text-sm mt-4 '>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
                                 </div>
                             </div>
                         )
