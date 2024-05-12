@@ -2,7 +2,7 @@ import React from 'react'
 
 function DummyData() {
     return (
-        <div className='flex container  '>
+        <div className='flex container '>
             <div className="bg-white md:w-1/4 duration-300 dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
                 <div>
                     <span className="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">

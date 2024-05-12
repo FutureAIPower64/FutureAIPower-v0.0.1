@@ -25,7 +25,7 @@ function ToggleSwitch() {
         <div className='container flex px-0 '>
             <div className="relative">
                 <button onClick={toggleDropdown} className="inline-flex items-center justify-center w-[40px] py-1 text-xl dark:text-gray-200 bg-transparent text-white  dark:bg-dark-black dark:hover:bg-hover-black rounded-md duration-300 " >
-                    {mode == 'dark' ? <RxMoon /> : <PiSunDuotone />}
+                    {mode == 'dark' ? <RxMoon /> : <PiSunDuotone className='text-black'/>}
                 </button>
                 {/* <div className={`absolute right-0 z-10 mt-2  w-[100px] bg-white text-black  shadow-lg shadow-gray-300 dark:shadow-gray-100 dark:bg-dark-black  rounded-md transition-all origin-top-right duration-300 ${isOpen ? "scale-100" : "scale-0"} `}> */}
                     <div className={`absolute right-0 z-10 mt-2  w-[100px] bg-white text-black shadow-lg dark:shadow-md dark:shadow-slate-700 dark:bg-dark-black  rounded-md transition-all origin-top-right duration-300 ${isOpen ? "scale-100" : "scale-0"} `}>
