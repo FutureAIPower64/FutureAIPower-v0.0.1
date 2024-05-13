@@ -780,7 +780,6 @@ const counterSlice = createSlice({
     reducers: {
         CheckBtn : (state,action)=>{
             state.DarkBtn = action.payload;
-            console.log(state.DarkBtn);
         },
         categorydata: (state, action) => {
             const category = action.payload;
