@@ -8,7 +8,7 @@ import TopCardmenu from "./TopCardmenu";
 
 function Home() {
   return (
-    <div>
+    <div className="dark:bg-dark-black">
       <Header />
       <Box />
       <div className='mt-10'>
