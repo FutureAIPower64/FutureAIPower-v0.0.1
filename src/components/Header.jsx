@@ -55,7 +55,7 @@ const Header = () => {
                             <div className="absolute right-1 top-1 text-gray-400 ">
                                 <div className="flex items-center  dark:bg-dark-grey dark:ring-dark-grey px-2 bg-light-gray  ring-1 ring-gray-300 rounded text-zinc-400  ">
                                     <MdKeyboardCommandKey />
-                                    <span>k</span>
+                                    <span>K</span>
                                 </div>
                             </div>
                         </div>
