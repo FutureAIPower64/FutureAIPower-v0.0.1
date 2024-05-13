@@ -52,16 +52,16 @@ function News() {
     return (
         <div className='pt-10 px-10'>
             <BlogHead head={'AI News'} desc={'Read AI Related News. Updated daily.'} />
-            <OwlCarousel className='owl-theme AI_Tools' id='light'  autoplay={true} autoplayTimeout={5000} margin={20} dots={false} loop  responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 3 }, 1299: { items: 4 } }} >
+            <OwlCarousel className='owl-theme AI_Tools' id='light' autoplay={true} autoplayTimeout={5000} margin={20} dots={false} loop responsive={{ 0: { items: 1 }, 600: { items: 2 }, 1024: { items: 3 }, 1299: { items: 4 } }} >
                 {newsData &&
                     newsData.map((ele, ind) => {
                         return (
-                            <div key={ind} className='dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 text-black p-3 rounded-md border-1'>
+                            <div key={ind} className='hover:dark:bg-dark-grey dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 text-black p-3 rounded-md border-1 '>
                                 <img src={ele.img} className='w-full rounded-md h-[160px] border-1 dark:border-card-border' alt="" />
                                 <div className='p-3'>
-                                    <p className='text-sm font-semibold text-blue-400 pb-2'>{ele.date}</p>
+                                    <p className='text-sm font-semibold dark:text-white pb-2'>{ele.date}</p>
                                     <p className='h-12 text-md'>{ele.desc}</p>
-                                    <button className='flex items-top gap-0 text-sm mt-4 '>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
+                                    <button className='flex items-top gap-0 text-sm mt-4'>Read More <MdOutlineArrowRightAlt className='text-2xl' /> </button>
                                 </div>
                             </div>
                         )

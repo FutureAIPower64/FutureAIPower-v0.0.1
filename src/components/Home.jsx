@@ -8,10 +8,10 @@ import TopCardmenu from "./TopCardmenu";
 
 function Home() {
   return (
-    <div>
+    <div className="dark:bg-dark-black">
       <Header />
       <Box />
-      <div className='mt-14'>
+      <div className='mt-10'>
         <div className='flex'>
           <div className='hidden lg:block lg:w-2/12'>
             <Sliderbar></Sliderbar>
@@ -21,6 +21,9 @@ function Home() {
             <Cards></Cards>
             <Cards></Cards>
             <News></News>
+            <Cards></Cards>
+            <Cards></Cards>
+            <Cards></Cards>
           </div>
         </div>
       </div>

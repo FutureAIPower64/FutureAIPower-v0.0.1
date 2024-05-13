@@ -8,13 +8,23 @@ export default {
   theme: {
     extend: {
       colors:{
-        "dark-black": '#09090b',
+        "dark-black": '#09090B',
+        "dark-grey": '#27272A',
         "hover-black": '#27272A',
         "hover-grey": '#F4F4F5',
         "hover-blue": 'rgba(23, 37, 84, 0.7)',
         "main-border":"#27272a",
         "card-color":" #020817",
         "card-border":"#353e4b",
+        "light-gray":"#f4f4f5",
+      
+
+        // --------new color--------
+        // "dark-black": '#828283',
+        "dark-grey":"#27272A",
+        // "graycolor-black":"#828283",
+        "dark-text-gray":"#9D9DA5",
+        "dark-bg-btn":"#FAFAFA",
       },
       height: {
         "box":"348px",
@@ -25,7 +35,7 @@ export default {
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
-        lg: '4rem',
+        lg: '3rem',
         xl: '5rem',
         '2xl': '6rem',
       },
@@ -35,11 +45,14 @@ export default {
       'md': '768px', 
       'lg': '1024px', 
       'xl': '1280px', 
-      '2xl': '1536px', 
+      // '2xl': '1440px' 
     },
     borderWidth: {
       '1': '1px',
-    }
+    },
+    // borderRadius: {
+    //   '10': '6px',
+    // }
   },
   plugins: [],
 }
