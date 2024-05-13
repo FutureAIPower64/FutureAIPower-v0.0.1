@@ -57,7 +57,7 @@ function News() {
                     newsData.map((ele, ind) => {
                         return (
                             <div key={ind} className='hover:dark:bg-dark-grey dark:text-white dark:bg-transparent dark:border-card-border bg-slate-100 text-black p-3 rounded-md border-1 '>
-                                <img src={ele.img} className='w-full rounded-md h-[160px] border-1 dark:border-card-border' alt="" />
+                                <img src={ele.img} className='w-full rounded-md h-[160px] border-1 dark:border-card-border object-cover' alt="" />
                                 <div className='p-3'>
                                     <p className='text-sm font-semibold dark:text-white pb-2'>{ele.date}</p>
                                     <p className='h-12 text-md'>{ele.desc}</p>

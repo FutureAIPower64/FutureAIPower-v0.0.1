@@ -1,10 +1,15 @@
 import React from "react";
 import Header from "./Header";
 import Box from "./Box";
-import Cards from "./Cards";
 import Sliderbar from "./Sliderbar";
 import News from "./News";
 import TopCardmenu from "./TopCardmenu";
+import TopAiTools from "./TopAiTools";
+import MostSavedTools from "./MostSavedTools";
+import TopFreeTools from "./TopFreeTools";
+import BusinessTools from "./BusinessTools";
+import ProductivityTools from "./ProductivityTools";
+import AutomationTools from "./AutomationTools";
 
 function Home() {
   return (
@@ -18,12 +23,13 @@ function Home() {
           </div>
           <div className='w-full lg:w-10/12 reletive'>
             <TopCardmenu></TopCardmenu>
-            <Cards></Cards>
-            <Cards></Cards>
+            <TopAiTools></TopAiTools>
+            <MostSavedTools></MostSavedTools>
             <News></News>
-            <Cards></Cards>
-            <Cards></Cards>
-            <Cards></Cards>
+            <TopFreeTools></TopFreeTools>
+            <BusinessTools></BusinessTools>
+            <ProductivityTools></ProductivityTools>
+            <AutomationTools></AutomationTools>
           </div>
         </div>
       </div>
