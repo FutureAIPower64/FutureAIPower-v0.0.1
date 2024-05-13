@@ -44,7 +44,6 @@ function ToggleSwitch() {
                         })}
                     </ul>
                 </div>
-                {/* </div> */}
             </div>
         </div>
     )
