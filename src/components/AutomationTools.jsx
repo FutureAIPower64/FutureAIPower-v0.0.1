@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 import BlogHead from './BlogHead';
 
 
-function Cards() {
+function AutomationTools() {
     let cards = useSelector(state => state.counter.cards);
     let mode = useSelector(state => state.counter.mode);
     useEffect(() => {
@@ -23,7 +23,7 @@ function Cards() {
     return (
         <>
             <div className='pt-10 px-10'>
-                <BlogHead head={'Top AI Tools'} desc={'Read AI Related Tools. Updated daily.'} ></BlogHead>
+                <BlogHead head={'Automation Tools'} ></BlogHead>
                 <OwlCarousel className='owl-theme AI_Tools' id='light' nav={false} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 }, 1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
@@ -57,8 +57,8 @@ function Cards() {
                                 </div>
                                 <div className='flex justify-between my-4' >
                                     <p className='text-md font-semibold text-sm'>{card.buttonText}</p>
-                                    <div className='flex items-center  rounded-md text-dark-black dark:bg-dark-bg-btn dark:border-card-color border-1 border-gray-300 hover:bg-gray-500'>
-                                        <buttton className='flex items-center px-1 rounded cursor-pointer dark:text-black dark:font-semibold  duration-300  border-1'>
+                                    <div className='flex items-center  rounded-md text-dark-black dark:bg-dark-bg-btn dark:border-card-color border-1 border-gray-300 hover:bg-gray-500 '>
+                                        <buttton className=' flex items-center px-1 rounded cursor-pointer dark:text-black dark:font-semibold   border-1  dark:hover:text-white'>
                                             <p className='text-sm me-2 '>Visit</p>
                                             <HiExternalLink ></HiExternalLink>
                                         </buttton>
@@ -73,4 +73,4 @@ function Cards() {
     )
 }
 
-export default Cards;
+export default AutomationTools;
