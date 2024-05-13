@@ -15,7 +15,7 @@ export default {
         "hover-blue": 'rgba(23, 37, 84, 0.7)',
         "main-border":"#27272a",
         "card-color":" #020817",
-        "card-border":"#353e4b",
+        "card-border":"#27272A",
         "light-gray":"#f4f4f5",
       
 
