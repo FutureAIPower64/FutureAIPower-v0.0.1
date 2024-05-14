@@ -766,12 +766,11 @@ const initialState = {
             description: 'Boost online presence with AI-driven, SEO-optimized content',
             tags: ['#marketing', " #SEO"],
             buttonText: 'Free Trial',
-            // visit: <HiExternalLink />,
             cate: 'SEO',
         },
 
     ],
-    DarkBtn : '',
+    DarkBtn : 'dark',
 };
 
 const counterSlice = createSlice({
@@ -791,8 +790,6 @@ const counterSlice = createSlice({
                 cards: filteredData
             };
         },
-
-
         changeMode: (state, action) => {
             localStorage.setItem('mode', action.payload)
             state.mode = action.payload;
