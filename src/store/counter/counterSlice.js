@@ -6,34 +6,34 @@ import { createSlice } from '@reduxjs/toolkit';
 
 // // Import your image assets here
 // // import icon1 from '/src/assets/c_img1.svg';
-import icon1 from '/src/assets/c_img1.svg';
-import icon2 from '/src/assets/c_img2.svg';
-import icon3 from '/src/assets/c_img3.svg'
-import icon4 from '/src/assets/c_img4.svg'
-import icon5 from '/src/assets/c_img5.svg'
-import icon6 from '/src/assets/c_img6.png'
-import icon7 from '/src/assets/c_img7.svg'
-import icon8 from '/src/assets/c_img8.svg'
-import icon9 from '/src/assets/c_img9.png'
-import icon10 from '/src/assets/c_img10.png'
-import icon11 from '/src/assets/c_img11.svg'
-import icon12 from '/src/assets/c_img12.svg'
-import icon13 from '/src/assets/c_img13.svg'
-import icon14 from '/src/assets/c_img14.svg'
-import icon15 from '/src/assets/c_img15.svg'
-import icon16 from '/src/assets/c_img16.svg'
-import icon18 from '/src/assets/c_img18.jpg'
-import icon19 from '/src/assets/c_img19.svg'
-import icon20 from '/src/assets/c_img20.jpg'
-import icon17 from '/src/assets/c_img17.jpg'
-import icon21 from '/src/assets/c_img21.svg'
-import icon22 from '/src/assets/c_img22.png'
-import icon23 from '/src/assets/c_img23.png'
-import icon24 from '/src/assets/c_img24.png'
-import icon25 from '/src/assets/c_img25.svg'
-import icon26 from '/src/assets/c_img26.svg'
-import icon27 from '/src/assets/c_img27.svg'
-import icon28 from '/src/assets/c_img28.png'
+import icon1 from '/src/assets/Adcreative.png';
+import icon2 from '/src/assets/Tome.png';
+import icon3 from '/src/assets/Andi.png'
+import icon4 from '/src/assets/Autodraw.png'
+import icon5 from '/src/assets/Beloga AI.png'
+import icon6 from '/src/assets/Boomy.png'
+import icon7 from '/src/assets/Booom.png'
+import icon8 from '/src/assets/Chatty AI.png'
+import icon9 from '/src/assets/Codeium.png'
+import icon10 from '/src/assets/Podcast.png'
+import icon11 from '/src/assets/Craiyon.png'
+import icon12 from '/src/assets/Devin AI.png'
+import icon13 from '/src/assets/Findly AI.png'
+import icon14 from '/src/assets/Jasper.png'
+import icon15 from '/src/assets/Glasp.png'
+import icon16 from '/src/assets/HarmonAI.png'
+import icon18 from '/src/assets/Hire Mia.png'
+import icon19 from '/src/assets/Iconify.png'
+import icon20 from '/src/assets/Ideas AI.png'
+import icon17 from '/src/assets/Freshworks.png'
+import icon21 from '/src/assets/Jusi.png'
+import icon22 from '/src/assets/Klenty.png'
+import icon23 from '/src/assets/Kotlibes.png'
+import icon24 from '/src/assets/Mage.png'
+import icon25 from '/src/assets/TutorAI.png'
+import icon26 from '/src/assets/SEO GPT.png'
+import icon27 from '/src/assets/Wisdolia.png'
+import icon28 from '/src/assets/T Hunter.png'
 // import { FiBookmark } from 'react-icons/fi';
 // Import other icons as needed...
 
@@ -233,7 +233,7 @@ const initialState = {
             icon: icon18,
             // bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Bard for Google Pro',
+            title: 'Bard for Google',
             description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
             tags: ['#productivity'],
             buttonText: 'Free',
@@ -279,7 +279,7 @@ const initialState = {
             icon: icon18,
             // bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Bard for Google Pro',
+            title: 'Bard for Pro',
             description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
             tags: ['#productivity'],
             buttonText: 'Free',
