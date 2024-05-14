@@ -771,26 +771,21 @@ const initialState = {
         },
 
     ],
-    // carddata:[],
-    // singlecate:''
+    DarkBtn : '',
 };
 
 const counterSlice = createSlice({
     name: 'counter',
     initialState,
     reducers: {
-
+        CheckBtn : (state,action)=>{
+            state.DarkBtn = action.payload;
+        },
         categorydata: (state, action) => {
-            // Assuming action.payload contains the category to filter by
-            const category = action.payload; // Assuming the payload is the category name
-
-            // Filter data based on the category
+            const category = action.payload;
             const filteredData = state.alldata.filter((item) => {
-                // Assuming 'cate' is the key for category in each item of state.alldata
                 return item.cate === category;
             });
-
-            // Update state with the filtered data
             return {
                 ...state,
                 cards: filteredData
@@ -805,6 +800,6 @@ const counterSlice = createSlice({
     }
 });
 
-export const { changeMode, categorydata } = counterSlice.actions;
+export const { changeMode, categorydata,CheckBtn } = counterSlice.actions;
 
 export default counterSlice.reducer;
