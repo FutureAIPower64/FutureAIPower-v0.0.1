@@ -12,16 +12,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { CheckBtn, changeMode } from './store/counter/counterSlice';
 
 function App() {
+  useEffect(() => {
+    dispatch(changeMode('dark'));
+  }, [])
   const mode = useSelector(state => state.counter.mode);
   const dispatch = useDispatch();
-  const [systemPrefersDark, setSystemPrefersDark] = useState(false);
-
+  const [systemDark, setSystemDark] = useState(false);
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setSystemPrefersDark(mediaQuery.matches);
-
+    setSystemDark(mediaQuery.matches);
     const handleChange = (event) => {
-      setSystemPrefersDark(event.matches);
+      setSystemDark(event.matches);
       if (mode === 'system') {
         const systemMode = event.matches ? 'dark' : 'light';
         dispatch(CheckBtn(systemMode))
@@ -29,16 +30,14 @@ function App() {
         dispatch(changeMode('system'));
       }
     };
-
     mediaQuery.addEventListener('change', handleChange);
-
     return () => {
       mediaQuery.removeEventListener('change', handleChange);
     };
   }, [mode, dispatch]);
 
   return (
-    <div data-mode={mode === "system" ? (systemPrefersDark ? "dark" : "light") : mode} className='dark:bg-black h-[500vh]'>
+    <div data-mode={mode === "system" ? (systemDark ? "dark" : "light") : mode} className='dark:bg-black h-[500vh]'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AI-Tools" element={<AI_Tools />} />
