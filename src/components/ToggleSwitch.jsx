@@ -20,14 +20,14 @@ function ToggleSwitch() {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
- 
+
     const outsideToggle = () => {
-        if(isOpen==true){
+        if (isOpen == true) {
             setIsOpen(false);
-        } 
+        }
     }
-    
-    addEventListener('mouseup',outsideToggle)
+
+    addEventListener('mouseup', outsideToggle)
 
 
 
