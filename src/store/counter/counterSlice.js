@@ -760,7 +760,9 @@ const initialState = {
         },
 
     ],
+
     mode: localStorage.getItem('mode') || 'dark',
+
     DarkBtn : 'dark',
 };
 

@@ -14,6 +14,9 @@ import Header from './components/Header';
 import Box from './components/Box';
 
 function App() {
+  useEffect(() => {
+    dispatch(changeMode('dark'));
+  }, [])
   const mode = useSelector(state => state.counter.mode);
   const dispatch = useDispatch();
   const [systemDark, setSystemDark] = useState(false);
@@ -37,8 +40,10 @@ function App() {
 
   return (
     <div data-mode={mode === "system" ? (systemDark ? "dark" : "light") : mode} className='dark:bg-black h-[500vh]'>
+
       <Header/>
       <Box />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AI-Tools" element={<AI_Tools />} />
