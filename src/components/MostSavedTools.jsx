@@ -31,8 +31,8 @@ function MostSavedTools() {
 
                                 <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
-                                        <div className='w-10 h-10 rounded-md me-3 dark:border-slate-50 border-1 border-dark-black'>
-                                            <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full'></img>
+                                        <div className='w-10 h-10 rounded-md  me-3 dark:border-card-border  border-1 ' /* style={{ borderRadius: '8px' }} */>
+                                            <img src={card.icon} className=' dark:border-slate-50  border-dark-black h-full w-full object-contain'></img>
                                         </div>
                                         <div className='font-semibold'>
                                             <p className='text-sm'>{card.title}</p>
