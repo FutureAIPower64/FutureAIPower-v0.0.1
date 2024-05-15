@@ -33,22 +33,22 @@ const Header = () => {
                     <Link to="/" className="text-xl font-bold">
                             <img src={darkMode ? logo : lightlogo} className="w-16" alt="Logo"></img>
                         </Link>
-                        <Link to="/AI-Tools" className="hover:text-black px-5  dark:hover:text-white duration-300">
+                        <Link to="/AI-Tools" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-300">
                             AI Tools
                         </Link>
-                        <Link to="/AI-News" className="hover:text-black px-5  dark:hover:text-white duration-300">
+                        <Link to="/AI-News" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-300">
                             AI News
                         </Link>
-                        <Link to="/Blog" className="hover:text-black px-5  dark:hover:text-white duration-300">
+                        <Link to="/Blog" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-300">
                             Blog
                         </Link>
-                        <Link to="/Contact" className="hover:text-black px-5  dark:hover:text-white duration-300">
+                        <Link to="/Contact" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-300">
                             Contact Us
                         </Link>
-                        <Link to="/Favourites" className="hover:text-black px-5  dark:hover:text-white duration-3003">
+                        <Link to="/Favourites" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-3003">
                             Favourites
                         </Link>
-                        <Link to="/About" className="hover:text-black px-5  dark:hover:text-white duration-300">
+                        <Link to="/About" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-300">
                             About Us
                         </Link>
                     </div>
