@@ -14,7 +14,6 @@ import AutomationTools from "./AutomationTools";
 function Home() {
   return (
     <div className="dark:bg-dark-black">
-      <Box />
       <div className='mt-10'>
         <div className='flex'>
           <div className='hidden lg:block lg:w-2/12'>

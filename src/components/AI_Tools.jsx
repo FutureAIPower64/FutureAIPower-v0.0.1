@@ -9,7 +9,7 @@ function AI_Tools() {
   const AiTools = useSelector(state => state.counter.cards);
   return (
     <div className={`dark:text-gray-100 bg-light-ai-img dark:bg-Ai-image bg-fixed bg-left dark:bg-left-bottom`}>
-      <div className="container lg:px-16 xl:px-2">
+      <div className="container lg:px-10  ">
         <div className=" md:pt-14 ">
           <div className="flex items-center gap-7 flex-wrap mb-6 md:w-10/12 pt-28">
             <img src={img1} className=" w-[60px] md:w-[100px] shadow rounded-2xl md:rounded-3xl shadow-card-border" alt="jasper" ></img>
@@ -40,7 +40,7 @@ function AI_Tools() {
           </div>
         </div>
       </div>
-      <div className="container justify-between xl:justify-center xl:gap-16 xl:p-0   flex flex-wrap">
+      <div className="container justify-between xl:justify-center xl:gap-16 xl:p-0 flex flex-wrap">
         <div className="lg:w-3/5 xl:w-8/12 w-full mt-12">
           <div>
             <div className="dark:bg-dark-grey border-1 darl:border-dark-text-grey bg-gray-100 shadow-lg dark:shadow-transparent shadow-gray-300 dark:border-border-gray p-4 rounded-2xl mb-10">
