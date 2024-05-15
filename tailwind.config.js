@@ -17,6 +17,7 @@ export default {
         "card-color":" #020817",
         "card-border":"#27272A",
         "light-gray":"#f4f4f5",
+        "border-gray":"#3e3e44",
       
 
         // --------new color--------
@@ -24,6 +25,7 @@ export default {
         "dark-grey":"#27272A",
         // "graycolor-black":"#828283",
         "dark-text-gray":"#9D9DA5",
+        "dark-text-grey":"#a2a2a4",
         "dark-bg-btn":"#FAFAFA",
       },
       height: {
