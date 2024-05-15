@@ -21,12 +21,14 @@ function ToggleSwitch() {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
-    useEffect(() => {
-        var DataMode = localStorage.getItem('mode');
-        if (!DataMode) {
-            localStorage.setItem('mode', 'system');
-        }
-    }, [mode])
+ 
+    const outsideToggle = () => {
+        if(isOpen==true){
+            setIsOpen(false);
+        } 
+    }
+    
+    addEventListener('mouseup',outsideToggle)
     return (
         <div className='container flex px-0 duration-300 '>
             <div className="relative">

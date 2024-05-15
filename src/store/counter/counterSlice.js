@@ -771,7 +771,7 @@ const initialState = {
         },
 
     ],
-    DarkBtn : '',
+    DarkBtn : 'dark',
 };
 
 const counterSlice = createSlice({
