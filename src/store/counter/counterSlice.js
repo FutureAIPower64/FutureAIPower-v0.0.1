@@ -1,12 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-// import { HiExternalLink } from "react-icons/hi";
-// import { FiBookmark } from "react-icons/fi";
-// import FiBookmark from 'react-icons/fi'
-// import { IoIosStar } from "react-icons/io";
-
-// // Import your image assets here
-// // import icon1 from '/src/assets/c_img1.svg';
-import icon1 from '/src/assets/Adcreative.png';
+import icon1 from '/src/assets/chatgpt.png';
 import icon2 from '/src/assets/Tome.png';
 import icon3 from '/src/assets/Andi.png'
 import icon4 from '/src/assets/Autodraw.png'
@@ -34,11 +27,8 @@ import icon25 from '/src/assets/TutorAI.png'
 import icon26 from '/src/assets/SEO GPT.png'
 import icon27 from '/src/assets/Wisdolia.png'
 import icon28 from '/src/assets/T Hunter.png'
-// import { FiBookmark } from 'react-icons/fi';
-// Import other icons as needed...
 
 const initialState = {
-    mode: localStorage.getItem('mode') || 'light',
     cards: [
         {
             icon: icon1,
@@ -766,12 +756,12 @@ const initialState = {
             description: 'Boost online presence with AI-driven, SEO-optimized content',
             tags: ['#marketing', " #SEO"],
             buttonText: 'Free Trial',
-            // visit: <HiExternalLink />,
             cate: 'SEO',
         },
 
     ],
-    DarkBtn : '',
+    mode: localStorage.getItem('mode') || 'dark',
+    DarkBtn : 'dark',
 };
 
 const counterSlice = createSlice({
@@ -791,8 +781,6 @@ const counterSlice = createSlice({
                 cards: filteredData
             };
         },
-
-
         changeMode: (state, action) => {
             localStorage.setItem('mode', action.payload)
             state.mode = action.payload;

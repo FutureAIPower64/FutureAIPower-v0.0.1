@@ -10,18 +10,18 @@ import About from './components/About';
 import Home from "./components/Home";
 import { useSelector, useDispatch } from "react-redux";
 import { CheckBtn, changeMode } from './store/counter/counterSlice';
+import Header from './components/Header';
+import Box from './components/Box';
 
 function App() {
   const mode = useSelector(state => state.counter.mode);
   const dispatch = useDispatch();
-  const [systemPrefersDark, setSystemPrefersDark] = useState(false);
-
+  const [systemDark, setSystemDark] = useState(false);
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setSystemPrefersDark(mediaQuery.matches);
-
+    setSystemDark(mediaQuery.matches);
     const handleChange = (event) => {
-      setSystemPrefersDark(event.matches);
+      setSystemDark(event.matches);
       if (mode === 'system') {
         const systemMode = event.matches ? 'dark' : 'light';
         dispatch(CheckBtn(systemMode))
@@ -29,16 +29,16 @@ function App() {
         dispatch(changeMode('system'));
       }
     };
-
     mediaQuery.addEventListener('change', handleChange);
-
     return () => {
       mediaQuery.removeEventListener('change', handleChange);
     };
   }, [mode, dispatch]);
 
   return (
-    <div data-mode={mode === "system" ? (systemPrefersDark ? "dark" : "light") : mode} className='dark:bg-black h-[500vh]'>
+    <div data-mode={mode === "system" ? (systemDark ? "dark" : "light") : mode} className='dark:bg-black h-[500vh]'>
+      <Header/>
+      <Box />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AI-Tools" element={<AI_Tools />} />

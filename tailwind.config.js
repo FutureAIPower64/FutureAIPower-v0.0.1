@@ -7,28 +7,27 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         "dark-black": '#09090B',
         "dark-grey": '#27272A',
         "hover-black": '#27272A',
         "hover-grey": '#F4F4F5',
         "hover-blue": 'rgba(23, 37, 84, 0.7)',
-        "main-border":"#27272a",
-        "card-color":" #020817",
-        "card-border":"#27272A",
-        "light-gray":"#f4f4f5",
-      
-
+        "main-border": "#27272a",
+        "card-color": " #020817",
+        "card-border": "#27272A",
+        "light-gray": "#f4f4f5",
+        "border-gray": "#3e3e44",
         // --------new color--------
-        // "dark-black": '#828283',
-        "dark-grey":"#27272A",
+        "dark-grey": "#27272A",
         // "graycolor-black":"#828283",
-        "dark-text-gray":"#9D9DA5",
-        "dark-bg-btn":"#FAFAFA",
+        "dark-text-gray": "#9D9DA5",
+        "dark-text-grey": "#a2a2a4",
+        "dark-bg-btn": "#FAFAFA",
       },
       height: {
-        "box":"348px",
-      }  
+        "box": "348px",
+      }
     },
     container: {
       center: true,
@@ -41,18 +40,20 @@ export default {
       },
     },
     screens: {
-      'sm': '640px', 
-      'md': '768px', 
-      'lg': '1024px', 
-      'xl': '1280px', 
-      // '2xl': '1440px' 
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      "2xl": '1440px'
     },
     borderWidth: {
       '1': '1px',
     },
-    // borderRadius: {
-    //   '10': '6px',
-    // }
+    backgroundImage: {
+      'Ai-image': "url('./src/assets/AI_tool_bg.png')",
+      'light-ai-img': "url('./src/assets/ai_bg-light.jpg')"
+    }
+
   },
   plugins: [],
 }
