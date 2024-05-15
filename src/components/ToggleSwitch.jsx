@@ -8,6 +8,7 @@ function ToggleSwitch() {
     const mode = useSelector((state) => state.counter.mode);
     const DarkBtn = useSelector((state) => state.counter.DarkBtn);
     const dispatch = useDispatch();
+
     const setMode = (ele) => {
         localStorage.setItem('mode', ele);
         dispatch(changeMode(ele));
@@ -26,11 +27,7 @@ function ToggleSwitch() {
             setIsOpen(false);
         }
     }
-
     addEventListener('mouseup', outsideToggle)
-
-
-
     return (
         <div className='container flex px-0 duration-300 '>
             <div className="relative">

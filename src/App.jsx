@@ -10,11 +10,9 @@ import About from './components/About';
 import Home from "./components/Home";
 import { useSelector, useDispatch } from "react-redux";
 import { CheckBtn, changeMode } from './store/counter/counterSlice';
+import Header from './components/Header';
 
 function App() {
-  useEffect(() => {
-    dispatch(changeMode('dark'));
-  }, [])
   const mode = useSelector(state => state.counter.mode);
   const dispatch = useDispatch();
   const [systemDark, setSystemDark] = useState(false);
@@ -38,6 +36,7 @@ function App() {
 
   return (
     <div data-mode={mode === "system" ? (systemDark ? "dark" : "light") : mode} className='dark:bg-black h-[500vh]'>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AI-Tools" element={<AI_Tools />} />
