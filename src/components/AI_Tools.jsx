@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 function AI_Tools() {
   const AiTools = useSelector(state => state.counter.cards);
   return (
-    <div className={`dark:text-gray-100 bg-light-ai-img dark:bg-Ai-image bg-fixed bg-left dark:bg-left-bottom`}>
+    <div className={`dark:text-gray-100 bg-light-ai-img dark:bg-Ai-image h-full bg-fixed bg-left dark:bg-left-bottom`}>
       <div className="container lg:px-10  ">
         <div className=" md:pt-14 ">
           <div className="flex items-center gap-7 flex-wrap mb-6 md:w-10/12 pt-28">
