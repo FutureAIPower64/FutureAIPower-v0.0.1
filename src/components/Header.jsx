@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/header-Logo.png";
+import lightlogo from "../assets/header-light-logo.png";
 import tool from "../assets/tool.jpeg";
 import ToggleSwitch from "./ToggleSwitch";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { MdKeyboardCommandKey } from "react-icons/md";
+import { useSelector } from "react-redux";
+
 
 
 const Header = () => {
+    const darkMode = useSelector((state) => state.counter.mode === 'dark')
+    // alert(darkMode)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -21,12 +26,12 @@ const Header = () => {
                 <nav className=" mx-auto px-4 py-2 flex items-center justify-between">
                     <div className="flex items-center  lg:hidden">
                         <Link to="/" className="text-xl font-bold">
-                            <img src={logo} className=" w-16"></img>
+                            <img src={darkMode ? logo : lightlogo} className="w-16" alt="Logo"></img>
                         </Link>
                     </div>
                     <div className="hidden lg:flex md:items-center md:space-x-4  text-zinc-400   font-semibold">
-                        <Link to="/" className="text-xl font-bold me-14">
-                            <img src={logo} className=" w-16"></img>
+                    <Link to="/" className="text-xl font-bold">
+                            <img src={darkMode ? logo : lightlogo} className="w-16" alt="Logo"></img>
                         </Link>
                         <Link to="/AI-Tools" className="hover:text-black  md:px-2 xl:px-4  dark:hover:text-white duration-300">
                             AI Tools
