@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { CiSearch } from "react-icons/ci";
 import { IoCloseSharp, IoDocumentTextOutline } from "react-icons/io5";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { searchData } from '../store/counter/counterSlice';
+
 
 function Box() {
+  var dispatch = useDispatch();
   const [toggle, setToggle] = useState("hidden");
   const [input, setInput] = useState('');
   const [temp, setTemp] = useState([]);
@@ -39,6 +42,12 @@ function Box() {
     setTemp(dummyData);
   };
 
+  const searchCard = (e) => {
+    dispatch(searchData(e));
+    setToggle("hidden");
+
+  };
+
   return (
     <div
       style={{ height: '100vh', backgroundColor: "rgba(0,0,0,0.8)", visibility: toggle }}
@@ -59,7 +68,7 @@ function Box() {
         <div className='overflow-hidden overflow-y-scroll h-full'>
           <ul className='px-2 pt-2'>
             {temp && temp.map((item, index) => (
-              <li key={index} className='flex items-center py-2 px-2 cursor-default hover:bg-dark-grey rounded-sm'>
+              <li key={index} className='flex items-center py-2 px-2 cursor-default hover:bg-dark-grey rounded-sm' onClick={()=>searchCard(item)}>
                 <i><IoDocumentTextOutline /></i>
                 <span className='ps-1'>{item}</span>
               </li>
