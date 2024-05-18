@@ -61,5 +61,25 @@
 }
 
 .sliderBar::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
+    background-color: transparent !important;
+}
+
+.sliderBar::-webkit-scrollbar-button {
+    background-color: transparent !important;
+}
+
+.sliderBar::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(198, 189, 197, 0.24);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgb(89, 89, 89);
 }
