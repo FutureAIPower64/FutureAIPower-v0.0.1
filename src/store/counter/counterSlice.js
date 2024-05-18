@@ -255,52 +255,6 @@ const initialState = {
             cate: 'Productivity',
         },
         {
-            icon: icon17,
-            // bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Unreal Speech',
-            description: 'Low cost Text-to-Speech API with human-like AI voices...',
-            tags: ['#text to speech', " #research"],
-            buttonText: 'Freemium',
-            // visit: <HiExternalLink />,
-            cate: 'Text to Speech',
-        },
-        {
-            icon: icon18,
-            // bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Bard for Pro',
-            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
-            tags: ['#productivity'],
-            buttonText: 'Free',
-            // visit: <HiExternalLink />,
-            cate: 'Productivity',
-
-        },
-        {
-            icon: icon19,
-            // bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Productivity Pets',
-            description: 'Task management and productivity tracking...',
-            tags: ['#Productivity'],
-            buttonText: 'Free',
-            // visit: <HiExternalLink />,
-            cate: 'Productivity',
-
-        },
-        {
-            icon: icon20,
-            // bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Productivity Vibes',
-            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
-            tags: ['#prompt generator'],
-            buttonText: 'Free',
-            // visit: <HiExternalLink />,
-            cate: 'Productivity',
-        },
-        {
             icon: icon21,
             // bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
@@ -589,53 +543,7 @@ const initialState = {
             icon: icon18,
             // bookmark: <FiBookmark />,
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Bard for Google Pro',
-            description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
-            tags: ['#productivity'],
-            buttonText: 'Free',
-            // visit: <HiExternalLink />,
-            cate: 'Productivity',
-
-        },
-        {
-            icon: icon19,
-            // bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Productivity Pets',
-            description: 'Task management and productivity tracking...',
-            tags: ['#Productivity'],
-            buttonText: 'Free',
-            // visit: <HiExternalLink />,
-            cate: 'Productivity',
-
-        },
-        {
-            icon: icon20,
-            // bookmark: <FiBookmark />,
-            star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
-            title: 'Productivity Vibes',
-            description: 'Boost productivity with 100s of ChatGPT prompts for home and...',
-            tags: ['#prompt generator'],
-            buttonText: 'Free',
-            // visit: <HiExternalLink />,
-            cate: 'Productivity',
-        },
-        {
-            icon: icon17,
-            // bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Unreal Speech',
-            description: 'Low cost Text-to-Speech API with human-like AI voices...',
-            tags: ['#text to speech', " #research"],
-            buttonText: 'Freemium',
-            // visit: <HiExternalLink />,
-            cate: 'Text to Speech',
-        },
-        {
-            icon: icon18,
-            // bookmark: <FiBookmark />,
-            star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#FF9635"],
-            title: 'Bard for Google Pro',
+            title: 'Bard for Google',
             description: 'Bard for Google Pro - the revolutionary AI-driven Chrome',
             tags: ['#productivity'],
             buttonText: 'Free',
@@ -763,21 +671,22 @@ const initialState = {
 
     mode: localStorage.getItem('mode') || 'dark',
 
-    DarkBtn : 'dark',
+    DarkBtn: 'dark',
 };
 
 const counterSlice = createSlice({
     name: 'counter',
     initialState,
     reducers: {
-        CheckBtn : (state,action)=>{
+        CheckBtn: (state, action) => {
             state.DarkBtn = action.payload;
         },
         categorydata: (state, action) => {
             const category = action.payload;
             const filteredData = state.alldata.filter((item) => {
-                return item.cate === category;
+                return item.cate === category
             });
+            console.log(filteredData);
             return {
                 ...state,
                 cards: filteredData
@@ -790,6 +699,6 @@ const counterSlice = createSlice({
     }
 });
 
-export const { changeMode, categorydata,CheckBtn } = counterSlice.actions;
+export const { changeMode, categorydata, CheckBtn, searchData } = counterSlice.actions;
 
 export default counterSlice.reducer;

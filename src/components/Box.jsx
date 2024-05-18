@@ -3,10 +3,12 @@ import { CiSearch } from "react-icons/ci";
 import { IoCloseSharp, IoDocumentTextOutline } from "react-icons/io5";
 import { PiCircle } from "react-icons/pi";
 
-function Box() {
-  const [toggle, setToggle] = useState("hidden")
 
-  const listing = ["Documentation", "Components", "Themes", "Example", "Blocks", "Intoduction", "Installation", "Theming", "DarkMode", "CLI", "Figma", "Typography", "Changelog"]
+
+function Box() {
+  let [toggle, setToggle] = useState( "hidden" )
+
+  const listing =["document"]
   const icons = [<IoDocumentTextOutline />, <IoDocumentTextOutline />, <IoDocumentTextOutline />, <IoDocumentTextOutline />, <IoDocumentTextOutline />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />]
   window.addEventListener("keydown", (e) => {
     if (e.ctrlKey && e.key === "k") {
@@ -29,13 +31,13 @@ function Box() {
           <i className='text-xl px-2 cursor-pointer' onClick={close}><IoCloseSharp /></i>
         </div>
         <div className='overflow-hidden overflow-y-scroll h-full'>
-          <ul className='px-2 pt-2'>
-            {
-              listing.map((item, index) => {
-                return <li className='flex items-center py-2 px-2 cursor-default hover:bg-dark-grey  rounded-sm '><i>{icons[index]}</i><span className='ps-1'>{item}</span></li>
-              })
-            }
-          </ul>
+            <ul className='px-2 pt-2'>
+              {
+                listing.map((item, index) => {
+                  return <li className='flex items-center py-2 px-2 cursor-default hover:bg-dark-grey  rounded-sm '><i>{icons[index]}</i><span className='ps-1'>{item}</span></li>
+                })
+              }
+            </ul>
         </div>
       </div>
     </div>
