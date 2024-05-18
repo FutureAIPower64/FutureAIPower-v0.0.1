@@ -66,13 +66,6 @@ function Box() {
           <i className='text-xl px-2 cursor-pointer' onClick={close}><IoCloseSharp /></i>
         </div>
         <div className='overflow-hidden overflow-y-scroll h-full'>
-            <ul className='px-2 pt-2'>
-              {
-                listing.map((item, index) => {
-                  return <li className='flex items-center py-2 px-2 cursor-default hover:bg-dark-grey  rounded-sm '><i>{icons[index]}</i><span className='ps-1'>{item}</span></li>
-                })
-              }
-            </ul>
           <ul className='px-2 pt-2'>
             {temp && temp.map((item, index) => (
               <li key={index} className='flex items-center py-2 px-2 cursor-default hover:bg-dark-grey rounded-sm' onClick={()=>searchCard(item)}>
