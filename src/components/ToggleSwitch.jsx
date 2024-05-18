@@ -29,7 +29,7 @@ function ToggleSwitch() {
     }
     addEventListener('mouseup', outsideToggle)
     return (
-        <div className='container flex px-0 duration-300 '>
+        <div className='container flex px-0 duration-300'>
             <div className="relative">
                 <button onClick={toggleDropdown} className="inline-flex items-center justify-center w-[40px] py-1 text-xl dark:text-gray-200 bg-transparent text-white dark:bg-dark-black dark:hover:bg-hover-black rounded-md duration-300 " >
                     {mode == 'system' ? DarkBtn == "dark" ? <RxMoon /> : <PiSunDuotone className='text-black' /> : mode == 'dark' ? <RxMoon /> : <PiSunDuotone className='text-black' />}
@@ -51,3 +51,4 @@ function ToggleSwitch() {
 }
 
 export default ToggleSwitch
+
