@@ -14,6 +14,9 @@ import Header from './components/Header';
 import Box from './components/Box';
 
 function App() {
+  useEffect(() => {
+    dispatch(changeMode('dark'));
+  }, [])
   const mode = useSelector(state => state.counter.mode);
   const dispatch = useDispatch();
   const [systemDark, setSystemDark] = useState(false);
