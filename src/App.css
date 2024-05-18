@@ -61,5 +61,16 @@
 }
 
 .sliderBar::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
+    background-color: transparent !important;
 }
+
+.sliderBar::-webkit-scrollbar-button {
+    background-color: transparent !important;
+}
+
+.sliderBar::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+}
+
+

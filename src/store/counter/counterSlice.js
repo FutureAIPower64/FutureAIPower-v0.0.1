@@ -511,7 +511,7 @@ const initialState = {
             star: ["#FF9635", "#FF9635", "#FF9635", "#FF9635", "#727272"],
             title: 'Shuffll',
             description: 'Revolutionize video production with AI: script to screen, fast, affordable,...',
-            tags: ['#marketing', "education"],
+            tags: ['#marketing', " #education"],
             buttonText: 'Paid',
             // visit: <HiExternalLink />,
             cate: 'Marketing',
@@ -523,7 +523,7 @@ const initialState = {
             star: ["#727272", "#727272", "#727272", "#727272", "#727272"],
             title: 'KeywordSearch',
             description: 'Optimize ad targeting and keyword strategy with AI-driven insights for...',
-            tags: ['#social media', ' #marketing', '#education'],
+            tags: ['#social media', ' #marketing',' #education'],
             buttonText: 'Free Trial',
             // visit: <HiExternalLink />,
             cate: 'Marketing',
@@ -681,6 +681,7 @@ const counterSlice = createSlice({
         CheckBtn: (state, action) => {
             state.DarkBtn = action.payload;
         },
+        
         categorydata: (state, action) => {
             const category = action.payload;
             const filteredData = state.alldata.filter((item) => {
@@ -695,6 +696,19 @@ const counterSlice = createSlice({
         changeMode: (state, action) => {
             localStorage.setItem('mode', action.payload)
             state.mode = action.payload;
+        },
+        
+        searchData: (state, action) => {
+            let searchText = action.payload;
+            let filteredData = state.alldata.filter((item) => {
+                const { title,tags } = item;
+                searchText=searchText.toLowerCase();
+                return title.toLowerCase().includes(searchText) || tags.some((tag) => tag.toLowerCase().includes(searchText));
+            });
+            return {
+                ...state,
+                cards: filteredData
+            }
         },
     }
 });
