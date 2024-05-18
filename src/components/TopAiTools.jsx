@@ -27,12 +27,12 @@ function TopAiTools() {
                 <OwlCarousel className='owl-theme AI_Tools' id='light' nav={false} margin={23} dots={false} responsive={{ 0: { items: 1 }, 500: { items: 2 }, 900: { items: 3 }, 1100: { items: 4 }, 1299: { items: 5 } }}>
                     {
                         cards.map((card) => (
-                            <div className='rounded-md px-4 py-3  hover:dark:bg-dark-grey dark:bg-dark-black dark:text-white w-full bg-white hover:bg-light-gray  border-1  dark:border-card-border '>
+                            <div className='rounded-md px-4 py-3 overflow-hidden  hover:dark:bg-dark-grey dark:bg-dark-black dark:text-white w-full bg-white hover:bg-light-gray  border-1  dark:border-card-border '>
 
                                 <div className='flex justify-between items-center  h-14'>
                                     <div className='flex'>
                                         <div className='w-10 h-10 rounded-md  me-3 dark:border-card-border  border-1 ' /* style={{ borderRadius: '8px' }} */>
-                                            <img src={card.icon} className=' dark:border-slate-50  border-dark-black h-full w-full object-contain'></img>
+                                            <img src={card.icon} className='rounded-md dark:border-slate-50  border-dark-black h-full w-full object-contain'></img>
                                         </div>
                                         <div className='font-semibold'>
                                             <p className='text-sm'>{card.title}</p>

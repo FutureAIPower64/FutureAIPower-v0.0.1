@@ -36,7 +36,7 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  Photo Editing
+                  Top Ai Tools
                 </a>
               </li>
               <li>
@@ -44,7 +44,7 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  Video Editing
+                  Most Saved Ai Tools
                 </a>
               </li>
               <li>
@@ -52,7 +52,7 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  Text To Speech
+                  Ai News
                 </a>
               </li>
               <li>
@@ -60,7 +60,7 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  Logo Generator
+                  Top Free Ai Tools
                 </a>
               </li>
               <li>
@@ -68,7 +68,7 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  Marketing
+                  Business AI Tools
                 </a>
               </li>
               <li>
@@ -76,7 +76,7 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  Productivity
+                  Productivity Tools
                 </a>
               </li>
               <li>
@@ -84,15 +84,8 @@ function TopCardmenu() {
                   href="#"
                   className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
                 >
-                  SEO
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-black dark:text-white  px-4 py-2 rounded-md hover:bg-light-gray duration-300 dark:hover:bg-black transition "
-                >
-                  Finance
+                  Automation Tools
+
                 </a>
               </li>
             </ul>
