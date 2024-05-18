@@ -773,6 +773,7 @@ const counterSlice = createSlice({
         CheckBtn : (state,action)=>{
             state.DarkBtn = action.payload;
         },
+        
         categorydata: (state, action) => {
             const category = action.payload;
             const filteredData = state.alldata.filter((item) => {
