@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -11,6 +11,7 @@ import BlogHead from './BlogHead';
 
 function TopAiTools() {
     let cards = useSelector(state => state.counter.cards);
+    console.log(cards);
     let mode = useSelector(state => state.counter.mode);
     useEffect(() => {
         if (mode === "dark") {
