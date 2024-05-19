@@ -705,14 +705,14 @@ const counterSlice = createSlice({
                 searchText=searchText.toLowerCase();
                 return title.toLowerCase().includes(searchText) || tags.some((tag) => tag.toLowerCase().includes(searchText));
             });
-            return {
-                ...state,
-                cards: filteredData
-            }
+
+            state.cards = [...filteredData];
+            console.log(state.cards)
         },
     }
 });
 
-export const { changeMode, categorydata, CheckBtn, searchData } = counterSlice.actions;
+export const { changeMode, categorydata,CheckBtn,searchData } = counterSlice.actions;
+
 
 export default counterSlice.reducer;

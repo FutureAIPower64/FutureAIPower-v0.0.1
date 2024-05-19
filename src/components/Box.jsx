@@ -3,12 +3,16 @@ import { CiSearch } from "react-icons/ci";
 import { IoCloseSharp, IoDocumentTextOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from 'react-redux';
 import { searchData } from '../store/counter/counterSlice';
+
 import { PiCircle } from "react-icons/pi";
+
 
 function Box() {
   var dispatch = useDispatch();
   const [toggle, setToggle] = useState("hidden");
+
   const icons = [<IoDocumentTextOutline />, <IoDocumentTextOutline />, <IoDocumentTextOutline />, <IoDocumentTextOutline />, <IoDocumentTextOutline />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />, <PiCircle />]
+
   const [input, setInput] = useState('');
   const [temp, setTemp] = useState([]);
   const cards = useSelector(state => state.counter.cards);
@@ -46,6 +50,7 @@ function Box() {
   const searchCard = (e) => {
     dispatch(searchData(e));
     setToggle("hidden");
+
   };
 
   return (
