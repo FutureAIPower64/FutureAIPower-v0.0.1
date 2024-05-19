@@ -41,7 +41,7 @@ function App() {
   return (
     <div data-mode={mode === "system" ? (systemDark ? "dark" : "light") : mode} className='dark:bg-black pb-10'>
       <Header/>
-      <Box />
+      <Box/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AI-Tools" element={<AI_Tools />} />

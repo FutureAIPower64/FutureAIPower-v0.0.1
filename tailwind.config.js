@@ -50,8 +50,8 @@ export default {
       '1': '1px',
     },
     backgroundImage: {
-      'Ai-image': "url('./src/assets/AI_tool_bg.png')",
-      'light-ai-img': "url('./src/assets/ai_bg-light.jpg')"
+      'Ai-image': "radial-gradient(circle at 38% 0%, rgba(122, 117, 73, 1) 0%, rgba(27, 83, 62, 1) 9%, rgba(40, 30, 59, 1) 19%, rgba(39, 2, 47, 1) 35%, rgba(20, 4, 28, 1) 65%, rgba(18, 1, 22, 1) 92%, rgba(0, 0, 0, 1) 100%);",
+      'light-ai-img': "radial-gradient(circle at 38% 0%, rgba(255, 255, 255, 1) 0%, rgba(232, 249, 255, 1) 25%, rgba(213, 234, 255, 1) 51%, rgba(252, 242, 255, 1) 92%)"
     }
 
   },

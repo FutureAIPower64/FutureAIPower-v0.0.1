@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import logo from "../assets/header-Logo.png";
 import lightlogo from "../assets/header-light-logo.png";
 import tool from "../assets/tool.jpeg";
@@ -7,11 +7,13 @@ import ToggleSwitch from "./ToggleSwitch";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { MdKeyboardCommandKey } from "react-icons/md";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 
-const Header = () => {
+const Header = (props) => {
+    let dispatch = useDispatch();
+
     const darkMode = useSelector((state) => state.counter.mode === 'dark')
     // alert(darkMode)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +21,15 @@ const Header = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+    const change=()=>{
+        props.setItem("visible")
+        console.log(props);
+    }
+  
 
     return (
-        <div className=" xl:px-20 fixed top-0 left-0 right-0 z-50  bg-white dark:bg-dark-black border-b-1 dark:border-dark-grey">
+        <>
+        <div className="xl:px-20 fixed top-0 left-0 right-0 z-50  bg-white dark:bg-dark-black border-b-1 dark:border-dark-grey">
             <header className="  text-white duration-300 ">
                 <nav className=" mx-auto px-4 py-2 flex items-center justify-between">
                     <div className="flex items-center  lg:hidden">
@@ -54,8 +62,8 @@ const Header = () => {
                     </div>
                     <div className="hidden lg:flex items-center">
                         <div className="relative lg:block hidden">
-                            <div>
-                                <input type="text" className=" bg-white hover:bg-light-gray dark:hover:bg-dark-black  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 dark:ring-dark-grey ring-gray-300 " placeholder="Search your tools..." />
+                            <div >
+                                <input type="text" className=" cursor-default bg-white hover:bg-light-gray dark:hover:bg-dark-black  dark:bg-dark-black text-black duration-300 dark:text-white px-4 py-1 rounded lg:w-52 xl:w-64 outline-none ring-1 dark:ring-dark-grey ring-gray-300 " placeholder="Search your tools..." onClick={change} readOnly  />
                             </div>
                             <div className="absolute right-1 top-1 text-gray-400 ">
                                 <div className="flex items-center  dark:bg-dark-grey dark:ring-dark-grey px-2 bg-light-gray  ring-1 ring-gray-300 rounded text-zinc-400  ">
@@ -109,6 +117,7 @@ const Header = () => {
                 </div>
             </header>
         </div>
+        </>
 
     );
 };
