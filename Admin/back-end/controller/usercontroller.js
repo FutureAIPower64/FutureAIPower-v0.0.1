@@ -10,3 +10,10 @@ exports.insert = async(req,res) => {
         data
     })
 }
+exports.get = async(req,res) => {
+    var data = await tools.find();
+    res.status(200).json({
+        status:"All data",
+        data
+    })
+}

@@ -15,5 +15,6 @@ var upload = multer({ storage: storage })
 
 /* GET home page. */
 router.post('/',upload.single('images'), user.insert);
+router.get('/', user.get);
 
 module.exports = router;
